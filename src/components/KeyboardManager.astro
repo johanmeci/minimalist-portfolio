@@ -1,1 +1,24 @@
-<h2>KeyboardManager</h2>
+<footer></footer>
+
+<ninja-keys> </ninja-keys>
+
+<script>
+  import "ninja-keys"
+
+  const ninja = document.querySelector("ninja-keys")
+
+  if(ninja !== null) {
+    ninja.data = [
+      {
+        id: 'print',
+        title: 'Print',
+        hotkey: 'ctrl+P',
+        icon: 'apps',
+        section: 'Acciones',
+        handler: () => {
+          window.print()
+        },
+      }
+    ]
+  }
+</script>
