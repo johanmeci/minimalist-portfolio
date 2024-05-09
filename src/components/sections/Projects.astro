@@ -46,7 +46,7 @@ import { projects } from "@cv";
 
   article {
     border-radius: 6px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #e3d3d3;
     gap: 16px;
     display: flex;
     flex-direction: column;
@@ -70,6 +70,10 @@ import { projects } from "@cv";
     color: #111;
   }
 
+  :global(.dark) article a {
+    color: #e3d3d3;
+  }
+
   article a:hover {
     text-decoration: underline;
   }
@@ -89,10 +93,14 @@ import { projects } from "@cv";
 
   article footer span {
     border-radius: 6px;
-    background-color: #eee;
+    background-color: #e3d3d3;
     color: #444;
     font-size: 0.6rem;
     font-weight: 500;
     padding: 0.2rem 0.6rem;
+  }
+
+  :global(.dark) article footer span {
+    color: #252829;
   }
 </style>

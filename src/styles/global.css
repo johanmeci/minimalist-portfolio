@@ -5,5 +5,5 @@ html.dark {
 
 
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark p, .dark time, .dark span {
-  color: #e3d3d3 !important;
+  color: #e3d3d3;
 }
