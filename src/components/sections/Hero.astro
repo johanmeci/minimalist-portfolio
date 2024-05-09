@@ -6,6 +6,7 @@ import Mail from '@/icons/Mail.astro';
 import Phone from '@/icons/Phone.astro';
 import GitHub from '@/icons/GitHub.astro';
 import LinkedIn from '@/icons/LinkedIn.astro';
+import ThemeIcon from '../ThemeIcon.astro';
 
 const { name, label, image, location, profiles, phone, email } = basics;
 const { city, region } = location;
@@ -24,6 +25,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(' • ');
 <Section>
   
   <div class="container">
+    
     <div class="info">
       <h1>{name}</h1>
       <h2>{label}</h2>
@@ -71,6 +73,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(' • ');
             );
           })
         }
+        <ThemeIcon />
       </footer>
     </div>
     <figure>
@@ -138,13 +141,38 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(' • ');
     width: 32px;
     border-radius: 6px;
     transition-property: color, border-color;
-    transition-duration: .13s;
-    transition-timing-function: ease;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
-  footer a:hover {
+  footer a:hover,
+  :global(.dark) footer a:hover {
     color: #333;
     background-color: #f7f6f6;
+  }
+
+  :global(.dark) footer a {
+    color: #e3d3d3;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .container .info {
+      order: 1;
+      padding-right: 0;
+      text-align: center;
+    }
+    .container .info footer {
+      justify-content: center;
+    }
+    .container figure {
+      order: 0;
+    }
+    footer {
+      gap: 10px;
+    }
   }
 
   .print {
