@@ -34,10 +34,7 @@
       "url": "https://www.linkedin.com/company/takeoff-media/",
       "startDate": "2022-07-01",
       "endDate": null,
-      "summary": "...",
-      "highlights": [
-        "Started the company"
-      ]
+      "summary": "..."
     },
     {
       "name": "Siesa",
@@ -45,20 +42,14 @@
       "url": "https://www.linkedin.com/company/siesa/",
       "startDate": "2018-10-01",
       "endDate": "2021-10-01",
-      "summary": "I was part of the digital transformation team of the support department. This team had as its main project the customer support page and in parallel the development of the intranet used by the company's employees.",
-      "highlights": [
-        "Started the company"
-      ]
+      "summary": "I was part of the digital transformation team of the support department. This team had as its main project the customer support page and in parallel the development of the intranet used by the company's employees."
     },
     {
       "name": "Gb Media Group",
       "position": "Front-end Developer",
       "startDate": "2017-09-01",
       "endDate": "2018-09-01",
-      "summary": "Design of prototypes in Adobe Illustrator for presentation to the client, followed by the creation of web pages using HTML, CSS, React and JavaScript according to the designed prototypes. In addition, development of icons and elements in SVG format for various sections of the pages, along with the deployment and configuration of domains and web certificates, creation of email accounts, and general administration of the website.",
-      "highlights": [
-        "Started the company"
-      ]
+      "summary": "Design of prototypes in Adobe Illustrator for presentation to the client, followed by the creation of web pages using HTML, CSS, React and JavaScript according to the designed prototypes. In addition, development of icons and elements in SVG format for various sections of the pages, along with the deployment and configuration of domains and web certificates, creation of email accounts, and general administration of the website."
     }
   ],
   "volunteer": [{
@@ -81,24 +72,11 @@
     "endDate": "2017-02-01",
     "score": "4.5"
   }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
   "certificates": [{
     "name": "Certificate",
     "date": "2021-11-07",
     "issuer": "Company",
     "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
   }],
   "skills": [
     {
