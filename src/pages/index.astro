@@ -8,6 +8,7 @@ import Hero from '@/components/sections/Hero.astro';
 import KeyboardManager from '@/components/KeyboardManager.astro';
 import Projects from '@/components/sections/Projects.astro';
 import Skills from '@/components/sections/Skills.astro';
+import '@/styles/global.css';
 ---
 
 <Layout title='Johan Meneses | Front End Developer'>
@@ -28,5 +29,11 @@ import Skills from '@/components/sections/Skills.astro';
 		padding: 4rem;
 		margin: auto;
 		width: 100%;
+	}
+
+	@media (max-width: 768px) {
+		main {
+			padding: 2rem;
+		}
 	}
 </style>
