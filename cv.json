@@ -71,6 +71,22 @@
     "startDate": "2014-02-01",
     "endDate": "2017-02-01",
     "score": "4.5"
+  },{
+    "institution": "Udemy",
+    "url": "https://www.udemy.com/certificate/UC-31a4521b-e868-47a5-9f03-26e5e2621db5/",
+    "area": "Principles SOLID and Clean Code",
+    "studyType": "Virtual",
+    "startDate": "2022-07-01",
+    "endDate": "2022-07-01",
+    "score": "4.5"
+  }, {
+    "institution": "Udemy",
+    "url": "https://www.udemy.com/certificate/UC-b7e0e632-6df5-435b-9c43-0d8419e01ef7/",
+    "area": "TypeScript",
+    "studyType": "Virtual",
+    "startDate": "2022-09-01",
+    "endDate": "2022-09-01",
+    "score": "4.5"
   }],
   "certificates": [{
     "name": "Certificate",
@@ -209,37 +225,6 @@
         "Retos para cualquier lenguaje"
       ],
       "url": "https://codember.dev"
-    },
-    {
-      "name": "codi.link",
-      "isActive": true,
-      "description": "Playground de código HTML, CSS y JavaScript para compartir",
-      "highlights": [
-        "100k visitas al mes",
-        "Desarrollado por la comunidad"
-      ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "Lista de pruebas técnicas de empresas para practicar programación",
-      "highlights": [
-        "100% gratuito",
-        "+500 soluciones de la comunidad"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-      "highlights": [
-        "+15k tickets repartidos",
-        "+50k espectadores en directo"
-      ],
-      "url": "https://miduconf.com"
     }
   ]
 }
