@@ -45,7 +45,7 @@
       "summary": "I was part of the digital transformation team of the support department. This team had as its main project the customer support page and in parallel the development of the intranet used by the company's employees."
     },
     {
-      "name": "Gb Media Group",
+      "name": "GB Media Group",
       "position": "Front-end Developer",
       "startDate": "2017-09-01",
       "endDate": "2018-09-01",
@@ -64,22 +64,22 @@
     ]
   }],
   "education": [{
-    "institution": "Universidad del Valle",
-    "url": "https://www.univalle.edu.co",
-    "area": "Information Systems Technology",
-    "studyType": "Technology",
-    "startDate": "2014-02-01",
-    "endDate": "2017-02-01",
-    "score": "4.5"
-  },{
-    "institution": "Udemy",
-    "url": "https://www.udemy.com/certificate/UC-31a4521b-e868-47a5-9f03-26e5e2621db5/",
-    "area": "Principles SOLID and Clean Code",
-    "studyType": "Virtual",
-    "startDate": "2022-07-01",
-    "endDate": "2022-07-01",
-    "score": "4.5"
-  }, {
+      "institution": "Universidad del Valle",
+      "url": "https://www.univalle.edu.co",
+      "area": "Information Systems Technology",
+      "studyType": "Technology",
+      "startDate": "2014-02-01",
+      "endDate": "2017-02-01",
+      "score": "4.5"
+    },{
+      "institution": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-31a4521b-e868-47a5-9f03-26e5e2621db5/",
+      "area": "Principles SOLID and Clean Code",
+      "studyType": "Virtual",
+      "startDate": "2022-07-01",
+      "endDate": "2022-07-01",
+      "score": "4.5"
+    }, {
     "institution": "Udemy",
     "url": "https://www.udemy.com/certificate/UC-b7e0e632-6df5-435b-9c43-0d8419e01ef7/",
     "area": "TypeScript",
@@ -200,8 +200,8 @@
       "isActive": true,
       "description": "Historia interactiva con retos de programación para viajar a Marte",
       "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
+        "GitHub",
+        "Preview"
       ],
       "url": "https://mars.codes"
     },
@@ -210,9 +210,8 @@
       "isActive": true,
       "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
       "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
+        "GitHub",
+        "Preview"
       ],
       "url": "https://advent.js/dev"
     },
@@ -221,8 +220,8 @@
       "isActive": true,
       "description": "Juego interactivo de programación con retos y secretos",
       "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
+        "GitHub",
+        "Preview"
       ],
       "url": "https://codember.dev"
     }
