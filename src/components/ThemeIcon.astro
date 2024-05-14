@@ -16,6 +16,14 @@ import Moon from "@/icons/Moon.astro";
     border-radius: 5px;
     width: 32px;
     height: 32px;
+    transition: transform 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94);;;
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  :global(.dark) #themeToggle:hover {
+    box-shadow: 0px 4px 8px rgba(227, 211, 211, 0.2);
   }
 
   .sun, .moon {

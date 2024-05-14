@@ -196,34 +196,20 @@
   }],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "GB Media Group",
       "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
-      "highlights": [
-        "GitHub",
-        "Preview"
+      "description": "Business group offering online business creation, development, audiovisual production, and corporate image services.",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/johanmeci/p-gbmedia"
+        },
+        {
+          "label": "Preview",
+          "url": "https://w-design.netlify.app"
+        }
       ],
       "url": "https://mars.codes"
-    },
-    {
-      "name": "AdventJS",
-      "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
-      "highlights": [
-        "GitHub",
-        "Preview"
-      ],
-      "url": "https://advent.js/dev"
-    },
-    {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
-      "highlights": [
-        "GitHub",
-        "Preview"
-      ],
-      "url": "https://codember.dev"
     }
   ]
 }
