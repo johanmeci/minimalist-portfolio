@@ -7,13 +7,13 @@ import { projects } from "@cv";
 <Section title="Projects">
   <ul>
     {
-      projects.map(({ url, description, highlights, name , isActive}) => {
+      projects.map(({ url, description, links, name , isActive}) => {
         return (
           <li>
             <article>
               <header>
                 <h3>
-                  <a href={url} title={`Ver el proyecto ${name}`}>
+                  <a href={url} title={`Ver el proyecto ${name}`} target="_blank">
                     {name}
                   </a>
                   {isActive && <span>&bullet;</span>}
@@ -22,9 +22,9 @@ import { projects } from "@cv";
               </header>
               <footer>
                 {
-                  highlights.map((highlight) => {
+                  links.map((link) => {
                     return (
-                      <span>{highlight}</span>
+                      <a href={link.url} target="_blank">{link.label}</a>
                     )
                   })
                 }
@@ -40,7 +40,7 @@ import { projects } from "@cv";
 <style>
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 222px));
     gap: 1rem;
   }
 
@@ -52,6 +52,20 @@ import { projects } from "@cv";
     flex-direction: column;
     padding: 16px;
     height: 100%;
+    transition: transform 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  :global(.dark) article {
+    border-color: rgba(227, 211, 211, 0.3);
+  }
+
+  article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  }
+
+  :global(.dark) article:hover {
+    box-shadow: 0px 4px 8px rgba(227, 211, 211, 0.2);
   }
 
   article header {
@@ -91,16 +105,17 @@ import { projects } from "@cv";
     font-size: 0.6rem;
   }
 
-  article footer span {
+  article footer a {
     border-radius: 6px;
     background-color: #e3d3d3;
     color: #444;
     font-size: 0.6rem;
     font-weight: 500;
     padding: 0.2rem 0.6rem;
+    text-decoration: none;
   }
 
-  :global(.dark) article footer span {
+  :global(.dark) article footer a {
     color: #252829;
   }
 </style>
