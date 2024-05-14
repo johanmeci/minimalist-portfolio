@@ -16,7 +16,7 @@ import Moon from "@/icons/Moon.astro";
     border-radius: 5px;
     width: 32px;
     height: 32px;
-    transition: transform 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94);;;
+    transition: transform 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     &:hover {
       transform: translateY(-3px);
     }
@@ -32,11 +32,11 @@ import Moon from "@/icons/Moon.astro";
     height: 100%;
   }
 
-  .sun { display: block; }
-  .moon { display: none; }
+  .sun { display: none; }
+  .moon { display: block; }
 
-  :global(.dark) .sun { display: none; }
-  :global(.dark) .moon { display: block; }
+  :global(.dark) .sun { display: block; }
+  :global(.dark) .moon { display: none; }
 
   @keyframes scale-up-center {
     from {
