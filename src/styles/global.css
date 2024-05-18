@@ -10,3 +10,64 @@ html.dark {
 .dark h1, .dark h2 {
   color: #f3f3f3;
 }
+
+.icon-container {
+  position: absolute;
+  top: 43px;
+  left: 0;
+}
+
+.icon-container svg {
+  transition: all 180ms ease;
+  stroke-width: 1.5;
+}
+
+.icon-container svg path,
+.icon-container svg circle,
+.icon-container svg polyline {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 0;
+}
+
+.icon-container svg rect {
+  stroke-dasharray: 80;
+  stroke-dashoffset: 0;
+}
+
+section:hover .icon-container svg path, section:hover .icon-container svg circle, section:hover .icon-container svg polyline {
+  animation: animateSvg 1s linear forwards;
+}
+
+section:hover .icon-container svg rect {
+  animation: animateSvgReact 1s linear forwards;
+}
+
+@keyframes animateSvg {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 50;
+  }
+  80% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes animateSvgReact {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 80;
+  }
+  80% {
+    stroke-dashoffset: 160;
+  }
+  100% {
+    stroke-dashoffset: 160;
+  }
+}

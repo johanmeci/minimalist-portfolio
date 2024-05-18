@@ -1,10 +1,14 @@
 ---
 import Section from "../Section.astro";
+import AboutIcon from "@/icons/AboutIcon.astro";
 
 import { basics } from "@cv";
 const { summary } = basics;
 ---
 
 <Section title="About">
+  <div class="icon-container">
+    <AboutIcon />
+  </div>
   <p>{summary}</p>
 </Section>
