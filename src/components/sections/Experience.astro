@@ -1,15 +1,19 @@
 ---
 import Section from "../Section.astro";
+import ExperienceIcon from "@/icons/ExperienceIcon.astro";
 
 import { work } from "@cv";
 ---
 
 <Section title="Experience">
+  <div class="icon-container">
+    <ExperienceIcon />
+  </div>
   <ul>
     {
       work.map(({ name, startDate, endDate, position, summary }) => {
         const startYear = new Date(startDate).getFullYear()
-        const endYear = endDate != null ? new Date(endDate).getFullYear() : "Actual"
+        const endYear = endDate != null ? new Date(endDate).getFullYear() : "Present"
         const years = `${startYear} - ${endYear}`
 
         return (

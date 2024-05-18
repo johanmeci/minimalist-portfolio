@@ -1,10 +1,14 @@
 ---
 import Section from "../Section.astro";
+import ProjectsIcon from "@/icons/ProjectsIcon.astro";
 
 import { projects } from "@cv";
 ---
 
 <Section title="Projects">
+  <div class="icon-container">
+    <ProjectsIcon/>
+  </div>
   <ul>
     {
       projects.map(({ url, description, links, name , isActive}) => {

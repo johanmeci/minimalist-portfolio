@@ -1,10 +1,14 @@
 ---
+import SkillsIcon from "@/icons/SkillsIcon.astro";
 import Section from "../Section.astro";
 
 import { skills } from "@cv";
 ---
 
 <Section title="Skills">
+  <div class="icon-container">
+    <SkillsIcon />
+  </div>
   <ul>
     {
       skills.map(({ name }) => (
