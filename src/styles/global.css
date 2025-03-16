@@ -1,15 +1,43 @@
 :root {
   --line: color-mix(in lch, canvasText, transparent 75%);
   --size: 40px;
+  
+  /* Color system - Light mode */
+  --bg-primary: #ffffff;
+  --bg-primary-rgb: 255, 255, 255;
+  --bg-secondary: #f7f7f7;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-muted: #777777;
+  --accent-color: #4a89dc;
+  --border-color: #eeeeee;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  /* Smooth theme transition */
+  --transition-theme: background-color 0.3s ease, color 0.3s ease;
 }
 
 html.dark {
   background-color: #252829;
   color: #e3d3d3;
+  
+  /* Color system - Dark mode */
+  --bg-primary: #252829;
+  --bg-primary-rgb: 37, 40, 41;
+  --bg-secondary: #2e3132;
+  --text-primary: #f3f3f3;
+  --text-secondary: #e3d3d3;
+  --text-muted: #b0b0b0;
+  --accent-color: #5c9ce6;
+  --border-color: #3a3a3a;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  transition: var(--transition-theme);
 }
 
 body::before {
-  
   content: '';
   height: 100vh;
   width: 100vw;
@@ -29,13 +57,28 @@ body::before {
 }
 
 .dark h3, .dark h4, .dark h5, .dark h6, .dark p, .dark time, .dark span {
-  color: #e3d3d3;
+  color: var(--text-secondary);
 }
 
 .dark h1, .dark h2 {
-  color: #f3f3f3;
+  color: var(--text-primary);
 }
 
+/* Accessibility improvements for links */
+a {
+  color: var(--accent-color);
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.dark a:hover {
+  color: color-mix(in srgb, var(--accent-color), white 20%);
+}
+
+/* Icon styles */
 .icon-container {
   position: absolute;
   top: 43px;
@@ -94,5 +137,17 @@ section:hover .icon-container svg rect {
   }
   100% {
     stroke-dashoffset: 160;
+  }
+}
+
+/* Print improvements */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  body::before {
+    display: none;
   }
 }
