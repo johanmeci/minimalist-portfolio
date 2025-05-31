@@ -3,12 +3,11 @@ import { basics } from '@cv';
 import Section from '@/components/Section.astro';
 import WorldMap from '@/icons/WorldMap.astro';
 import Mail from '@/icons/Mail.astro';
-import Phone from '@/icons/Phone.astro';
 import GitHub from '@/icons/GitHub.astro';
 import LinkedIn from '@/icons/LinkedIn.astro';
 import ThemeIcon from '../ThemeIcon.astro';
 
-const { name, label, image, location, profiles, phone, email } = basics;
+const { name, label, location, profiles, email } = basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
@@ -19,7 +18,7 @@ const SOCIAL_ICONS: Record<string, any> = {
 const linkedInfo = profiles.find(({ network }) => network === 'LinkedIn');
 const linkedUrl = linkedInfo?.url;
 
-const printInfo = [email, phone, linkedUrl].filter(Boolean).join(' • ');
+const printInfo = [email, linkedUrl].filter(Boolean).join(' • ');
 ---
 
 <Section>
@@ -45,17 +44,6 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(' • ');
               target="_blank"
               rel="noopener noreferrer">
               <Mail />
-            </a>
-          )
-        }
-        {
-          phone && (
-            <a 
-              href={`tel:${phone}`}
-              title={`Call ${name} at ${phone}`}
-              target="_blank"
-              rel="noopener noreferrer">
-              <Phone />
             </a>
           )
         }
