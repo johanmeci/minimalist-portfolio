@@ -1,5 +1,5 @@
 :root {
-  --line: color-mix(in lch, canvasText, transparent 75%);
+  --line: color-mix(in lch, canvasText, transparent 70%);
   --size: 40px;
   
   /* Color system - Light mode */
@@ -18,11 +18,11 @@
 }
 
 html.dark {
-  background-color: #252829;
+  background-color: #17191a;
   color: #e3d3d3;
   
   /* Color system - Dark mode */
-  --bg-primary: #252829;
+  --bg-primary: #17191a;
   --bg-primary-rgb: 37, 40, 41;
   --bg-secondary: #2e3132;
   --text-primary: #f3f3f3;
