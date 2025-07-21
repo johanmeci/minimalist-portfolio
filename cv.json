@@ -196,20 +196,53 @@
   }],
   "projects": [
     {
+      "name": "Landing Page",
+      "description": "Authorized distributors of beauty and personal care products such as shaving razors, personal hygiene products, etc.",
+      "links": [
+        {
+          "label": "Preview",
+          "url": "https://edpracol-website.vercel.app/"
+        }
+      ],
+      "url": "https://edpracol-website.vercel.app/",
+      "image": "/assets/projects/edpracol_project.jpg",
+      "technologies": [
+        "astro",
+        "gsap"
+      ]
+    },
+    {
       "name": "GB Media Group",
-      "isActive": true,
       "description": "Business group offering online business creation, development, audiovisual production, and corporate image services.",
       "links": [
         {
-          "label": "GitHub",
-          "url": "https://github.com/johanmeci/p-gbmedia"
-        },
-        {
           "label": "Preview",
-          "url": "https://w-design.netlify.app"
+          "url": "https://gbmedia-website.vercel.app"
         }
       ],
-      "url": "https://w-design.netlify.app"
+      "url": "https://gbmedia-website.vercel.app",
+      "image": "/assets/projects/gb_project.jpg",
+      "technologies": [
+        "react"
+      ]
+    },
+    {
+      "name": "Studio Models",
+      "description": "Business group offering online business creation, development, audiovisual production, and corporate image services.",
+      "status": "In progress",
+      "links": [
+        {
+          "label": "Preview",
+          "url": "https://studio-models.vercel.app"
+        }
+      ],
+      "url": "https://studio-models.vercel.app",
+      "image": "/assets/projects/studio_models_project.jpg",
+      "technologies": [
+        "astro",
+        "resend",
+        "nodejs"
+      ]
     }
   ]
 }
