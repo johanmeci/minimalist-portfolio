@@ -156,12 +156,18 @@ import { projects } from "@cv";
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background-color: yellow;
+        background-color: var(--accent-color);
         position: absolute;
         top: 45%;
         left: 0;
         transform: translateY(-45%);
       }
+    }
+  }
+
+  :global(.dark) article footer .status {
+    &::after {
+      background-color: var(--accent-color);
     }
   }
 
