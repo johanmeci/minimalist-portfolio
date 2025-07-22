@@ -217,4 +217,19 @@ import { projects } from "@cv";
   :global(.dark) article footer a {
     color: #252829;
   }
+
+  @media print {
+    article {
+      header {
+        img {
+          display: none;
+        }
+      }
+      footer {
+        .container-links {
+          display: none;
+        }
+      }
+    }
+  }
 </style>
