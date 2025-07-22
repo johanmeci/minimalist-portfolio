@@ -6,7 +6,7 @@
     "email": "johanmeci03@gmail.com",
     "phone": "+573185316578",
     "url": "https://midu.dev",
-    "summary": "I am a web developer with 3 years of experience as a back-end developer and 2+ years as a front-end developer, in the IT services and ERP solutions industry, specifically in the development of web applications to provide support and content consumption for clients.",
+    "summary": "A passionate Front-End Developer with 5+ years of experience crafting seamless digital experiences for the IT and ERP sectors. My focus is on creating user-centric web applications for support and content platforms, leveraging a robust back-end foundation to ensure high performance and scalability.",
     "location": {
       "address": "",
       "postalCode": "0000",
@@ -34,7 +34,7 @@
       "url": "https://www.linkedin.com/company/takeoff-media/",
       "startDate": "2022-07-01",
       "endDate": null,
-      "summary": "..."
+      "summary": "My current role involves a dynamic mix of advanced web and email development. I contribute to the creation of modern web applications with Next.js and Prismic, while also supporting projects built with Vue.js. Concurrently, I am actively involved in our team's specialized email workflow, utilizing a full suite of tools including Stripo, Braze, Email on Acid, and Salesforce to design, test, and launch effective marketing campaigns."
     },
     {
       "name": "Siesa",
@@ -42,27 +42,16 @@
       "url": "https://www.linkedin.com/company/siesa/",
       "startDate": "2018-10-01",
       "endDate": "2021-10-01",
-      "summary": "I was part of the digital transformation team of the support department. This team had as its main project the customer support page and in parallel the development of the intranet used by the company's employees."
+      "summary": "I contributed to the Support Department's digital transformation by co-developing two critical digital assets: the primary customer support page and the company-wide intranet, enhancing both external user experience and internal operational efficiency."
     },
     {
       "name": "GB Media Group",
       "position": "Front-end Developer",
       "startDate": "2017-09-01",
       "endDate": "2018-09-01",
-      "summary": "Design of prototypes in Adobe Illustrator for presentation to the client, followed by the creation of web pages using HTML, CSS, React and JavaScript according to the designed prototypes. In addition, development of icons and elements in SVG format for various sections of the pages, along with the deployment and configuration of domains and web certificates, creation of email accounts, and general administration of the website."
+      "summary": "I handled the end-to-end development of client websites, starting with the design of high-fidelity prototypes in Adobe Illustrator. I then translated the approved designs into responsive and functional websites using HTML, CSS, React, and JS, creating custom SVG icons and graphics to enrich the user interface. My role concluded with managing the full deployment lifecycle: from configuring domains and SSL certificates to setting up email accounts and providing ongoing site administration."
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
   "education": [{
       "institution": "Universidad del Valle",
       "url": "https://www.univalle.edu.co",
