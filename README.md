@@ -1,54 +1,62 @@
-# Astro Starter Kit: Basics
+# Johan Meneses - Portafolio Profesional
 
-```sh
-npm create astro@latest -- --template basics
-```
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/johan-meneses)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github)](https://github.com/johanmeci)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+¡Bienvenido/a a mi portafolio profesional! Soy un **Desarrollador Front-end** con más de 5 años de experiencia creando experiencias digitales excepcionales en el sector tecnológico.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Sobre el Proyecto
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Este portafolio personal está construido con **Astro**, un framework web moderno que me permite crear sitios rápidos y optimizados. El diseño es minimalista y enfocado en el contenido, destacando mi experiencia y proyectos profesionales.
 
-## 🚀 Project Structure
+## 🛠️ Tecnologías Utilizadas
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Framework**: Astro
+- **Estilos**: CSS nativo / Tailwind CSS
+- **Hosting**: Vercel / Netlify
+- **Otras herramientas**: Git, npm, Prettier
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## 🚀 Características
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- **Rendimiento óptimo** gracias a Astro
+- **Diseño responsive** que se adapta a cualquier dispositivo
+- **Modo oscuro/claro** para mejor experiencia de usuario
+- **SEO optimizado** para mejor visibilidad
+- **Carga ultrarrápida** con renderizado estático
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🛠️ Instalación
 
-Any static assets, like images, can be placed in the `public/` directory.
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/minimalist-portfolio.git
+   cd minimalist-portfolio
+   ```
 
-## 🧞 Commands
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-All commands are run from the root of the project, from a terminal:
+3. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+4. Abre [http://localhost:4321](http://localhost:4321) en tu navegador.
 
-## 👀 Want to learn more?
+## 🚀 Despliegue
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Puedes desplegar este proyecto en:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjohanmeci%2Fminimalist-portfolio)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/johanmeci/minimalist-portfolio)
+
+## 📞 Contacto
+
+- 📧 Email: [johanmeci03@gmail.com](mailto:johanmeci03@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/johan-meneses](https://linkedin.com/in/johan-meneses)
+- 💻 GitHub: [github.com/johanmeci](https://github.com/johanmeci)
+
+---
+
+✨ Desarrollo inspirado en [Midudev Portfolio](https://github.com/midudev/minimalist-portfolio-json)
