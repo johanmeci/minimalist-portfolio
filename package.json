@@ -11,9 +11,10 @@
   },
   "dependencies": {
     "@astrojs/check": "0.4.1",
+    "@astrojs/sitemap": "3.6.0",
     "astro": "4.2.8",
     "ninja-keys": "1.2.2",
-    "options": "^0.0.6",
+    "options": "0.0.6",
     "typescript": "5.3.3"
   }
 }

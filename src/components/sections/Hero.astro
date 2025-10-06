@@ -65,7 +65,13 @@ const printInfo = [email, linkedUrl].filter(Boolean).join(' • ');
       </footer>
     </div>
     <figure class="profile-image">
-      <img src="/assets/avatar_johanmeneses.jpg" alt={name} />
+      <img 
+        src="/assets/avatar_johanmeneses.jpg" 
+        alt={`${name} - ${label} professional headshot`}
+        loading="eager"
+        width="190"
+        height="240"
+      />
     </figure>
   </div>
 

@@ -18,12 +18,12 @@ import { projects } from "@cv";
             <article>
               <header>
                 <h3>
-                  <a href={url} title={`View project ${name}`} target="_blank">
+                  <a href={url} title={`View project ${name}`} target="_blank" rel="noopener noreferrer">
                     {name}
                     <ArrowIcon/>
                   </a>
                 </h3>
-                {image && <img src={image} alt={name} />}
+                {image && <img src={image} alt={`${name} project screenshot`} loading="lazy" />}
                 <p>{description}</p>
               </header>
               <footer>
@@ -32,7 +32,7 @@ import { projects } from "@cv";
                     technologies.map((technology) => {
                       return (
                         <span>
-                          <img src={`/assets/icons/${technology}-icon.svg`} alt={technology} />
+                          <img src={`/assets/icons/${technology}-icon.svg`} alt={`${technology} technology icon`} width="16" height="16" loading="lazy" />
                           {technology !== 'gsap' && technology}
                         </span>
                       )
@@ -43,7 +43,7 @@ import { projects } from "@cv";
                   {
                     links.map((link) => {
                       return (
-                        <a href={link.url} target="_blank">{link.label}</a>
+                        <a href={link.url} target="_blank" rel="noopener noreferrer">{link.label}</a>
                       )
                     })
                   }                

@@ -1,0 +1,109 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  article?: boolean;
+  canonical?: string;
+}
+
+const {
+  title = "Johan Meneses | Front-end Developer - Portfolio",
+  description = "Front-end Developer specializing in React, Next.js, and modern web technologies. View my portfolio with projects in WordPress, Vue.js, and email development.",
+  image = "/assets/avatar_johanmeneses.jpg",
+  article = false,
+  canonical = Astro.url.href,
+} = Astro.props;
+
+const siteUrl = Astro.site || "https://johanmeneses.dev";
+const fullImageUrl = new URL(image, siteUrl).href;
+
+// Structured Data for Person/Professional
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Johan Meneses",
+  jobTitle: "Front-end Developer",
+  url: siteUrl,
+  image: fullImageUrl,
+  sameAs: [
+    "https://github.com/johanmeci",
+    "https://linkedin.com/in/johan-meneses"
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "La Unión",
+    addressRegion: "Nariño",
+    addressCountry: "CO"
+  },
+  email: "johanmeci03@gmail.com",
+  telephone: "+573185316578",
+  knowsAbout: [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Vue.js",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "WordPress",
+    "PHP",
+    "MySQL",
+    "Git",
+    "Email Development",
+    "Braze",
+    "Salesforce"
+  ],
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Universidad del Valle"
+  }
+};
+---
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={article ? "article" : "website"} />
+<meta property="og:url" content={canonical} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={fullImageUrl} />
+<meta property="og:image:alt" content="Johan Meneses - Front-end Developer" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Johan Meneses Portfolio" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={canonical} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={fullImageUrl} />
+<meta property="twitter:image:alt" content="Johan Meneses - Front-end Developer" />
+<meta name="twitter:creator" content="@johanmeci" />
+
+<!-- Additional SEO Meta Tags -->
+<meta name="author" content="Johan Meneses" />
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
+<meta name="language" content="English" />
+<meta name="revisit-after" content="7 days" />
+
+<!-- Keywords -->
+<meta name="keywords" content="Front-end Developer, React Developer, Next.js Developer, JavaScript Developer, TypeScript, Web Development, Portfolio, Johan Meneses, Colombia Developer, WordPress Developer, Vue.js, Email Development" />
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#3b82f6" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1e40af" media="(prefers-color-scheme: dark)" />
