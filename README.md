@@ -35,4 +35,4 @@ This portfolio is built using **Astro**, a modern web framework that enables the
 ---
 
 ✨ Developed with ❤️ by [Johan Meneses](https://johanmeneses.dev)  
-Inspired by the minimalist community.
+Inspired by the [midudev/minimalist-portfolio-json](https://github.com/midudev/minimalist-portfolio-json) community project.
