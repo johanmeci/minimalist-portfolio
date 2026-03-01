@@ -5,6 +5,7 @@ import WorldMap from '@/icons/WorldMap.astro';
 import Mail from '@/icons/Mail.astro';
 import GitHub from '@/icons/GitHub.astro';
 import LinkedIn from '@/icons/LinkedIn.astro';
+import CV from '@/icons/CV.astro';
 import ThemeIcon from '../ThemeIcon.astro';
 
 const { name, label, location, profiles, email } = basics;
@@ -13,6 +14,7 @@ const { city, region } = location;
 const SOCIAL_ICONS: Record<string, any> = {
   GitHub,
   LinkedIn,
+  CV,
 };
 
 const linkedInfo = profiles.find(({ network }) => network === 'LinkedIn');
@@ -53,9 +55,11 @@ const printInfo = [email, linkedUrl].filter(Boolean).join(' • ');
             return (
               <a 
                 href={url}
-                title={`Visit ${name}'s ${network} profile`}
+                title={network === 'CV' ? `Download ${name}'s CV` : `Visit ${name}'s ${network} profile`}
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+                download={network === 'CV' ? `Johan_Meneses_CV.pdf` : undefined}
+              >
                 <Icon />
               </a>
             );
