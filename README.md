@@ -1,62 +1,38 @@
-# Johan Meneses - Portafolio Profesional
+# Professional Minimalist Portfolio
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/johan-meneses)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github)](https://github.com/johanmeci)
 
-¡Bienvenido/a a mi portafolio profesional! Soy un **Desarrollador Front-end** con más de 5 años de experiencia creando experiencias digitales excepcionales en el sector tecnológico.
-
-## 🚀 Sobre el Proyecto
-
-Este portafolio personal está construido con **Astro**, un framework web moderno que me permite crear sitios rápidos y optimizados. El diseño es minimalista y enfocado en el contenido, destacando mi experiencia y proyectos profesionales.
-
-## 🛠️ Tecnologías Utilizadas
-
-- **Framework**: Astro
-- **Estilos**: CSS nativo / Tailwind CSS
-- **Hosting**: Vercel / Netlify
-- **Otras herramientas**: Git, npm, Prettier
-
-## 🚀 Características
-
-- **Rendimiento óptimo** gracias a Astro
-- **Diseño responsive** que se adapta a cualquier dispositivo
-- **Modo oscuro/claro** para mejor experiencia de usuario
-- **SEO optimizado** para mejor visibilidad
-- **Carga ultrarrápida** con renderizado estático
-
-## 🛠️ Instalación
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/minimalist-portfolio.git
-   cd minimalist-portfolio
-   ```
-
-2. Instala las dependencias:
-   ```bash
-   npm install
-   ```
-
-3. Inicia el servidor de desarrollo:
-   ```bash
-   npm run dev
-   ```
-
-4. Abre [http://localhost:4321](http://localhost:4321) en tu navegador.
-
-## 🚀 Despliegue
-
-Puedes desplegar este proyecto en:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjohanmeci%2Fminimalist-portfolio)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/johanmeci/minimalist-portfolio)
-
-## 📞 Contacto
-
-- 📧 Email: [johanmeci03@gmail.com](mailto:johanmeci03@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/johan-meneses](https://linkedin.com/in/johan-meneses)
-- 💻 GitHub: [github.com/johanmeci](https://github.com/johanmeci)
+Welcome! This is my professional portfolio, designed with a focus on **Minimalism, Performance, and User Experience**. As a **Front-end Developer** with over 5 years of experience, I created this space to showcase my professional journey and technical expertise in the tech industry.
 
 ---
 
-✨ Desarrollo inspirado en [Midudev Portfolio](https://github.com/midudev/minimalist-portfolio-json)
+## 🚀 About the Project
+
+This portfolio is built using **Astro**, a modern web framework that enables the creation of lightning-fast, content-focused websites. The project follows a minimalist aesthetic to ensure that the developer's experience and professional background remain the primary focus.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Astro](https://astro.build/) - High-performance content delivery.
+- **Styling**: Native CSS & [Tailwind CSS](https://tailwindcss.com/) - For a clean and responsive UI.
+- **Data Source**: JSON-based CV structure for easy maintenance and portability.
+- **Optimization**: SEO-friendly architecture with static site generation (SSG).
+
+## ✨ Key Features
+
+- **Ultra-Fast Performance**: Achieved through Astro's island architecture and static rendering.
+- **Fully Responsive**: Optimized for all devices, from mobile phones to high-resolution desktops.
+- **Dark/Light Mode**: Seamless theme switching for enhanced user accessibility.
+- **Print-Friendly**: Optimized layout for exporting to PDF or printing.
+- **Clean Typography**: Focused on readability and professional presentation.
+
+## 📞 Get in Touch
+
+- **Email**: [johanmeci03@gmail.com](mailto:johanmeci03@gmail.com)
+- **LinkedIn**: [linkedin.com/in/johan-meneses](https://linkedin.com/in/johan-meneses)
+- **GitHub**: [github.com/johanmeci](https://github.com/johanmeci)
+
+---
+
+✨ Developed with ❤️ by [Johan Meneses](https://johanmeneses.dev)  
+Inspired by the minimalist community.
