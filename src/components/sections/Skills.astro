@@ -11,7 +11,7 @@ import { skills } from "@cv";
   </div>
   <ul>
     {
-      skills.map(({ name }) => (
+      (skills || []).map(({ name }) => (
         <li>
           <span>{name}</span>
         </li>

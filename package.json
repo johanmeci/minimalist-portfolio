@@ -14,7 +14,7 @@
     "@astrojs/sitemap": "3.6.0",
     "astro": "4.2.8",
     "ninja-keys": "1.2.2",
-    "options": "0.0.6",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "zod": "^4.3.6"
   }
 }

@@ -11,9 +11,9 @@ import { work } from "@cv";
   </div>
   <ul>
     {
-      work.map(({ name, startDate, endDate, position, summary }) => {
-        const startYear = new Date(startDate).getFullYear()
-        const endYear = endDate != null ? new Date(endDate).getFullYear() : "Present"
+      (work || []).map(({ name, startDate, endDate, position, summary }) => {
+        const startYear = startDate ? new Date(startDate).getFullYear() : "N/A"
+        const endYear = endDate ? new Date(endDate).getFullYear() : "Present"
         const years = `${startYear} - ${endYear}`
 
         return (

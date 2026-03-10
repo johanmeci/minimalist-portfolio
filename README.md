@@ -14,7 +14,7 @@ This portfolio is built using **Astro**, a modern web framework that enables the
 ## 🛠️ Tech Stack
 
 - **Framework**: [Astro](https://astro.build/) - High-performance content delivery.
-- **Styling**: Native CSS & [Tailwind CSS](https://tailwindcss.com/) - For a clean and responsive UI.
+- **Styling**: Native CSS - For a clean and responsive UI.
 - **Data Source**: JSON-based CV structure for easy maintenance and portability.
 - **Optimization**: SEO-friendly architecture with static site generation (SSG).
 

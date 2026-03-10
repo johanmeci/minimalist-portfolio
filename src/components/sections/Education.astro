@@ -11,12 +11,16 @@ import { education } from "@cv";
   </div>
   <ul>
     {
-      education
-        .sort((a, b) => new Date(b.endDate).getTime() - new Date(a.endDate).getTime())
+      (education || [])
+        .sort((a, b) => {
+          const aTime = a.endDate ? new Date(a.endDate).getTime() : new Date().getTime();
+          const bTime = b.endDate ? new Date(b.endDate).getTime() : new Date().getTime();
+          return bTime - aTime;
+        })
         .map(({ institution, startDate, endDate, area }) => {
           
-          const startYear = new Date(startDate).getFullYear();
-          const endYear = endDate != null ? new Date(endDate).getFullYear() : 'Actual';
+          const startYear = startDate ? new Date(startDate).getFullYear() : 'N/A';
+          const endYear = endDate ? new Date(endDate).getFullYear() : 'Actual';
           const years = startYear === endYear ? startYear : `${startYear} - ${endYear}`;
 
         return (

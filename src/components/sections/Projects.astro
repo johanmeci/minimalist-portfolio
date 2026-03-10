@@ -12,7 +12,7 @@ import { projects } from "@cv";
   </div>
   <ul>
     {
-      projects.map(({ url, description, links, name, image, technologies, status }) => {
+      (projects || []).map(({ url, description, links, name, image, technologies, status }) => {
         return (
           <li>
             <article>
@@ -29,7 +29,7 @@ import { projects } from "@cv";
               <footer>
                 <div class="container-technologies">
                   {
-                    technologies.map((technology) => {
+                    (technologies || []).map((technology) => {
                       return (
                         <span>
                           <img src={`/assets/icons/${technology}-icon.svg`} alt={`${technology} technology icon`} width="16" height="16" loading="lazy" />
@@ -41,7 +41,7 @@ import { projects } from "@cv";
                 </div>
                 <div class="container-links">
                   {
-                    links.map((link) => {
+                    (links || []).map((link) => {
                       return (
                         <a href={link.url} target="_blank" rel="noopener noreferrer">{link.label}</a>
                       )
