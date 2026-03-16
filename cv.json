@@ -6,7 +6,7 @@
     "email": "johanmeci03@gmail.com",
     "phone": "+573185316578",
     "url": "https://midu.dev",
-    "summary": "I’m a web developer who has contributed to key projects such as customer support portals and corporate intranets, collaborating on the development of custom WordPress plugins and REST API integrations that streamlined workflows and improved user experiences. I also work with modern stacks like Next.js and Prismic, and support the management of email campaigns through tools like Braze and Salesforce.",
+    "summary": "Frontend Developer with over 5 years of experience building high-performance web applications and digital experiences. Specialized in modern frameworks like React, Next.js, and Astro. Proven track record of delivering scalable solutions, from corporate intranets to responsive web apps, optimizing workflows and enhancing user engagement. Adept at bridging the gap between design and technical implementation to deliver seamless, accessible UIs.",
     "location": {
       "address": "",
       "postalCode": "0000",
@@ -39,7 +39,7 @@
       "url": "https://www.linkedin.com/company/takeoff-media/",
       "startDate": "2022-07-01",
       "endDate": null,
-      "summary": "My current role involves a dynamic mix of advanced web and email development. I contribute to the creation of modern web applications with Next.js and Prismic, while also supporting projects built with Vue.js. Concurrently, I am actively involved in our team's specialized email workflow, utilizing a full suite of tools including Stripo, Braze, Email on Acid, and Salesforce to design, test, and launch effective marketing campaigns."
+      "summary": "Engineered modern web applications using Next.js, Prismic, and Vue.js, delivering high-performance and SEO-optimized solutions. Designed and implemented complex email marketing workflows using Braze, Salesforce, and Stripo, ensuring cross-client compatibility via Email on Acid and driving significant customer engagement."
     },
     {
       "name": "Siesa",
@@ -47,14 +47,14 @@
       "url": "https://www.linkedin.com/company/siesa/",
       "startDate": "2018-10-01",
       "endDate": "2021-10-01",
-      "summary": "As part of the digital transformation team, I co-developed a new customer support page and company intranet using a WordPress, PHP, and MySQL stack. My main responsibilities involved developing custom WordPress plugins from scratch to implement bespoke features, as well as integrating internal services via a REST API to automate workflows. These platforms significantly improved the external user experience and streamlined internal operations."
+      "summary": "Key contributor to the digital transformation team, developing a comprehensive customer support portal and corporate intranet. Engineered custom WordPress plugins and seamlessly integrated internal REST APIs, automating key business workflows. These initiatives successfully streamlined internal operations and significantly enhanced the end-user experience."
     },
     {
       "name": "GB Media Group",
       "position": "Front-end Developer",
       "startDate": "2017-09-01",
       "endDate": "2018-09-01",
-      "summary": "I handled the end-to-end development of client websites, starting with the design of high-fidelity prototypes in Adobe Illustrator. I then translated the approved designs into responsive and functional websites using HTML, CSS, React, and JS, creating custom SVG icons and graphics to enrich the user interface. My role concluded with managing the full deployment lifecycle: from configuring domains and SSL certificates to setting up email accounts and providing ongoing site administration."
+      "summary": "Led the end-to-end development lifecycle for multiple client websites, from high-fidelity prototyping in Adobe Illustrator to final deployment. Developed responsive, interactive interfaces using React, JavaScript, HTML, and CSS. Managed the full deployment pipeline, including domain configuration, SSL certification, and ongoing site administration."
     }
   ],
   "education": [{
@@ -163,35 +163,35 @@
       "name": "Prismic",
       "level": "Advanced",
       "keywords": [
-        "Web Development", "Frontend", "JavaScript Library", "UI"
+        "Headless CMS", "Content Management", "API"
       ]
     },
     {
       "name": "Stripo",
       "level": "Advanced",
       "keywords": [
-        "Web Development", "Frontend", "JavaScript Library", "UI"
+        "Email Development", "Marketing", "Templates"
       ]
     },
     {
       "name": "Email on Acid",
       "level": "Advanced",
       "keywords": [
-        "Web Development", "Frontend", "JavaScript Library", "UI"
+        "Email Testing", "Quality Assurance", "Marketing"
       ]
     },
     {
       "name": "Braze",
       "level": "Advanced",
       "keywords": [
-        "Web Development", "Frontend", "JavaScript Library", "UI"
+        "Customer Engagement", "Marketing Automation", "CRM"
       ]
     },
     {
       "name": "Salesforce",
       "level": "Advanced",
       "keywords": [
-        "Web Development", "Frontend", "JavaScript Library", "UI"
+        "CRM", "Marketing Cloud", "Enterprise"
       ]
     }
   ],
@@ -208,7 +208,7 @@
   "projects": [
     {
       "name": "Landing Page",
-      "description": "Authorized distributors of beauty and personal care products such as shaving razors, personal hygiene products, etc.",
+      "description": "High-performance landing page for a beauty and personal care distributor, featuring smooth animations and optimized load times.",
       "links": [
         {
           "label": "Preview",
@@ -224,7 +224,7 @@
     },
     {
       "name": "GB Media Group",
-      "description": "Business group offering online business creation, development, audiovisual production, and corporate image services.",
+      "description": "Corporate website for a business group offering digital services, focusing on modern UI, fast rendering, and responsive design.",
       "links": [
         {
           "label": "Preview",
