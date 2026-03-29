@@ -12,9 +12,9 @@ import { work } from "@cv";
   <ul>
     {
       (work || []).map(({ name, startDate, endDate, position, summary }) => {
-        const startYear = startDate ? new Date(startDate).getFullYear() : "N/A"
-        const endYear = endDate ? new Date(endDate).getFullYear() : "Present"
-        const years = `${startYear} - ${endYear}`
+        const startYear = startDate ? new Date(startDate).getFullYear() : "N/A";
+        const endYear = endDate ? new Date(endDate).getFullYear() : "Present";
+        const years = `${startYear} - ${endYear}`;
 
         return (
           <li>
@@ -32,10 +32,9 @@ import { work } from "@cv";
               </footer>
             </article>
           </li>
-        )
+        );
       })
     }
-    
   </ul>
 </Section>
 
@@ -43,18 +42,28 @@ import { work } from "@cv";
   ul {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 3rem;
+    li {
+      border: 1px solid var(--border-color);
+      padding: 1rem;
+      border-radius: 5px;
+      background-color: #ffffff;
+    }
+  }
+
+  :global(.dark) li {
+    background-color: var(--bg-primary);
   }
 
   article h3 {
     font-size: 1.3rem;
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
     font-weight: 700;
     color: #111;
   }
 
   :global(.dark) article h3 {
-    color: #e3d3d3;
+    color: #f3f3f3;
   }
 
   article h4 {
@@ -66,7 +75,11 @@ import { work } from "@cv";
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  footer p {
+    white-space: pre-line;
   }
 
   time {

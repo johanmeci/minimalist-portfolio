@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Johan Meneses",
-    "label": "Front-end Developer",
+    "label": "Frontend Developer",
     "image": "https://avatars.githubusercontent.com/u/42250585?s=460&u=",
     "email": "johanmeci03@gmail.com",
     "phone": "+573185316578",
     "url": "https://midu.dev",
-    "summary": "Frontend Developer with over 5 years of experience building high-performance web applications and digital experiences. Specialized in modern frameworks like React, Next.js, and Astro. Proven track record of delivering scalable solutions, from corporate intranets to responsive web apps, optimizing workflows and enhancing user engagement. Adept at bridging the gap between design and technical implementation to deliver seamless, accessible UIs.",
+    "summary": "Frontend Developer with 5+ years of experience building scalable web applications and responsive email campaigns. Specialized in React, Next.js, and TypeScript for modern product interfaces, and in HTML email development using Braze, Salesforce Marketing Cloud, Stripo, and Email on Acid. Open to remote opportunities with US/EU-based companies.",
     "location": {
       "address": "",
       "postalCode": "0000",
-      "city": "La Unión (NAR)",
+      "city": "Remote",
       "countryCode": "CO",
-      "region": "Colombia"
+      "region": "Colombia · Remote"
     },
     "profiles": [
       {
@@ -35,11 +35,11 @@
   "work": [
     {
       "name": "Takeoff Media",
-      "position": "Front-end Developer",
+      "position": "Frontend Developer",
       "url": "https://www.linkedin.com/company/takeoff-media/",
       "startDate": "2022-07-01",
       "endDate": null,
-      "summary": "Engineered modern web applications using Next.js, Prismic, and Vue.js, delivering high-performance and SEO-optimized solutions. Designed and implemented complex email marketing workflows using Braze, Salesforce, and Stripo, ensuring cross-client compatibility via Email on Acid and driving significant customer engagement."
+      "summary": "→ Develop and maintain modern web applications using Next.js, React, and TypeScript, integrating Prismic headless CMS for dynamic content delivery across multiple markets.\n\n→ Execute the end-to-end HTML email development workflow — from design and coding to cross-client testing and deployment — for a global audience of 100,000+ subscribers.\n\n→ Manage responsive email campaigns using Stripo for design, Email on Acid for QA testing, and Braze / Salesforce Marketing Cloud for deployment and automation.\n\n→ Support Vue.js projects across the team's stack, ensuring stability, performance, and long-term maintainability.\n\n📦 Next.js · React · TypeScript · Prismic · HTML Email Development · Stripo · Email on Acid · Braze · Salesforce Marketing Cloud · Vue.js · Git · REST API"
     },
     {
       "name": "Siesa",
@@ -47,17 +47,18 @@
       "url": "https://www.linkedin.com/company/siesa/",
       "startDate": "2018-10-01",
       "endDate": "2021-10-01",
-      "summary": "Key contributor to the digital transformation team, developing a comprehensive customer support portal and corporate intranet. Engineered custom WordPress plugins and seamlessly integrated internal REST APIs, automating key business workflows. These initiatives successfully streamlined internal operations and significantly enhanced the end-user experience."
+      "summary": "→ Developed custom WordPress plugins in PHP to implement tailored features for the support department, eliminating manual processes for 200+ internal users.\n\n→ Integrated internal systems via REST API, automating key data workflows and reducing manual data entry by an estimated 40%.\n\n→ Maintained two high-traffic platforms — a public-facing customer support portal and a company-wide intranet — improving operational efficiency and system reliability for 500+ employees.\n\n📦 PHP · WordPress · MySQL · REST API · JavaScript · HTML · CSS"
     },
     {
       "name": "GB Media Group",
-      "position": "Front-end Developer",
+      "position": "Frontend Developer",
       "startDate": "2017-09-01",
       "endDate": "2018-09-01",
-      "summary": "Led the end-to-end development lifecycle for multiple client websites, from high-fidelity prototyping in Adobe Illustrator to final deployment. Developed responsive, interactive interfaces using React, JavaScript, HTML, and CSS. Managed the full deployment pipeline, including domain configuration, SSL certification, and ongoing site administration."
+      "summary": "→ Developed fully responsive, cross-browser websites using React, JavaScript, HTML, and CSS for multiple clients, translating complex designs into clean, maintainable code.\n\n→ Designed high-fidelity prototypes and wireframes in Adobe Illustrator, collaborating directly with clients to validate design and requirements before development.\n\n→ Managed the complete deployment lifecycle for 5+ client projects, including domain configuration, SSL certificates, email setup, and ongoing site administration.\n\n→ Built custom features using PHP for backend functionality and dynamic content integration.\n\n📦 React · JavaScript · HTML · CSS · PHP · Adobe Illustrator · Git · Responsive Design · Cross-browser Compatibility"
     }
   ],
-  "education": [{
+  "education": [
+    {
       "institution": "Universidad del Valle",
       "url": "https://www.univalle.edu.co",
       "area": "Information Systems Technology",
@@ -65,7 +66,8 @@
       "startDate": "2014-02-01",
       "endDate": "2017-02-01",
       "score": "4.5"
-    },{
+    },
+    {
       "institution": "Udemy",
       "url": "https://www.udemy.com/certificate/UC-31a4521b-e868-47a5-9f03-26e5e2621db5/",
       "area": "Principles SOLID and Clean Code",
@@ -73,125 +75,166 @@
       "startDate": "2022-07-01",
       "endDate": "2022-07-01",
       "score": "4.5"
-    }, {
-    "institution": "Udemy",
-    "url": "https://www.udemy.com/certificate/UC-b7e0e632-6df5-435b-9c43-0d8419e01ef7/",
-    "area": "TypeScript",
-    "studyType": "Virtual",
-    "startDate": "2022-09-01",
-    "endDate": "2022-09-01",
-    "score": "4.5"
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
+    },
+    {
+      "institution": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-b7e0e632-6df5-435b-9c43-0d8419e01ef7/",
+      "area": "TypeScript",
+      "studyType": "Virtual",
+      "startDate": "2022-09-01",
+      "endDate": "2022-09-01",
+      "score": "4.5"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
   "skills": [
     {
       "name": "HTML",
       "level": "Master",
       "keywords": [
-        "Web Development", "Frontend"
+        "Web Development",
+        "Frontend"
       ]
     },
     {
       "name": "CSS",
       "level": "Master",
       "keywords": [
-        "Web Development", "Frontend", "Responsive Design"
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
       ]
     },
     {
       "name": "JavaScript",
       "level": "Master",
       "keywords": [
-        "Web Development", "Frontend", "Backend", "Fullstack"
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
       ]
     },
     {
       "name": "Tailwind",
       "level": "Advanced",
       "keywords": [
-        "Web Development", "Frontend", "CSS Framework", "Responsive Design"
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
       ]
     },
     {
       "name": "TypeScript",
       "level": "Advanced",
       "keywords": [
-        "Web Development", "Frontend", "Backend", "JavaScript Superset"
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
       ]
     },
     {
       "name": "MySQL",
       "level": "Advanced",
       "keywords": [
-        "Databases", "SQL", "Data Storage", "Backend"
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
       ]
     },
     {
       "name": "Git",
       "level": "Advanced",
       "keywords": [
-        "Version Control", "Collaboration", "Source Code"
+        "Version Control",
+        "Collaboration",
+        "Source Code"
       ]
     },
     {
       "name": "GitHub",
       "level": "Advanced",
       "keywords": [
-        "Version Control", "Collaboration", "Source Code", "Git"
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
       ]
     },
     {
       "name": "Next.js",
       "level": "Advanced",
       "keywords": [
-        "Web Development", "Frontend", "React Framework", "SSR", "Static Generation"
+        "Web Development",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
       ]
     },
     {
       "name": "React",
       "level": "Advanced",
       "keywords": [
-        "Web Development", "Frontend", "JavaScript Library", "UI"
+        "Web Development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
       ]
     },
     {
       "name": "Prismic",
       "level": "Advanced",
       "keywords": [
-        "Headless CMS", "Content Management", "API"
+        "Headless CMS",
+        "Content Management",
+        "API"
       ]
     },
     {
       "name": "Stripo",
       "level": "Advanced",
       "keywords": [
-        "Email Development", "Marketing", "Templates"
+        "Email Development",
+        "Marketing",
+        "Templates"
       ]
     },
     {
       "name": "Email on Acid",
       "level": "Advanced",
       "keywords": [
-        "Email Testing", "Quality Assurance", "Marketing"
+        "Email Testing",
+        "Quality Assurance",
+        "Marketing"
       ]
     },
     {
       "name": "Braze",
       "level": "Advanced",
       "keywords": [
-        "Customer Engagement", "Marketing Automation", "CRM"
+        "Customer Engagement",
+        "Marketing Automation",
+        "CRM"
       ]
     },
     {
-      "name": "Salesforce",
+      "name": "Salesforce Marketing Cloud",
       "level": "Advanced",
       "keywords": [
-        "CRM", "Marketing Cloud", "Enterprise"
+        "CRM",
+        "Marketing Cloud",
+        "Enterprise"
       ]
     }
   ],
