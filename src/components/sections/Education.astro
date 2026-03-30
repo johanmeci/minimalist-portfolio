@@ -13,32 +13,38 @@ import { education } from "@cv";
     {
       (education || [])
         .sort((a, b) => {
-          const aTime = a.endDate ? new Date(a.endDate).getTime() : new Date().getTime();
-          const bTime = b.endDate ? new Date(b.endDate).getTime() : new Date().getTime();
+          const aTime = a.endDate
+            ? new Date(a.endDate).getTime()
+            : new Date().getTime();
+          const bTime = b.endDate
+            ? new Date(b.endDate).getTime()
+            : new Date().getTime();
           return bTime - aTime;
         })
         .map(({ institution, startDate, endDate, area }) => {
-          
-          const startYear = startDate ? new Date(startDate).getFullYear() : 'N/A';
-          const endYear = endDate ? new Date(endDate).getFullYear() : 'Actual';
-          const years = startYear === endYear ? startYear : `${startYear} - ${endYear}`;
+          const startYear = startDate
+            ? new Date(startDate).getFullYear()
+            : "N/A";
+          const endYear = endDate ? new Date(endDate).getFullYear() : "Actual";
+          const years =
+            startYear === endYear ? startYear : `${startYear} - ${endYear}`;
 
-        return (
-          <li>
-            <article>
-              <header>
-                <div>
-                  <h3>{institution}</h3>
-                </div>
-                <time>{years}</time>
-              </header>
-              <footer>
-                <p>{area}</p>
-              </footer>
-            </article>
-          </li>
-        )
-      })
+          return (
+            <li>
+              <article>
+                <header>
+                  <div>
+                    <h3>{institution}</h3>
+                  </div>
+                  <time>{years}</time>
+                </header>
+                <footer>
+                  <p>{area}</p>
+                </footer>
+              </article>
+            </li>
+          );
+        })
     }
   </ul>
 </Section>
@@ -71,7 +77,7 @@ import { education } from "@cv";
     font-size: 0.85rem;
     min-width: 102px;
     text-align: right;
-    padding-right: .5rem;
+    padding-right: 0.5rem;
   }
 
   @media (width <= 700px) {

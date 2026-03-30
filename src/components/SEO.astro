@@ -8,8 +8,8 @@ interface Props {
 }
 
 const {
-  title = "Johan Meneses | Front-end Developer - Portfolio",
-  description = "Front-end Developer specializing in React, Next.js, and modern web technologies. View my portfolio with projects in WordPress, Vue.js, and email development.",
+  title = "Johan Meneses | Frontend Developer - Portfolio",
+  description = "Frontend Developer specializing in React, Next.js, and modern web technologies. View my portfolio with projects in WordPress, Vue.js, and email development.",
   image = "/assets/avatar_johanmeneses.jpg",
   article = false,
   canonical = Astro.url.href,
@@ -23,18 +23,18 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Johan Meneses",
-  jobTitle: "Front-end Developer",
+  jobTitle: "Frontend Developer",
   url: siteUrl,
   image: fullImageUrl,
   sameAs: [
     "https://github.com/johanmeci",
-    "https://linkedin.com/in/johan-meneses"
+    "https://linkedin.com/in/johan-meneses",
   ],
   address: {
     "@type": "PostalAddress",
     addressLocality: "La Unión",
     addressRegion: "Nariño",
-    addressCountry: "CO"
+    addressCountry: "CO",
   },
   email: "johanmeci03@gmail.com",
   telephone: "+573185316578",
@@ -53,12 +53,12 @@ const structuredData = {
     "Git",
     "Email Development",
     "Braze",
-    "Salesforce"
+    "Salesforce",
   ],
   alumniOf: {
     "@type": "CollegeOrUniversity",
-    name: "Universidad del Valle"
-  }
+    name: "Universidad del Valle",
+  },
 };
 ---
 
@@ -84,7 +84,10 @@ const structuredData = {
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={fullImageUrl} />
-<meta property="twitter:image:alt" content="Johan Meneses - Front-end Developer" />
+<meta
+  property="twitter:image:alt"
+  content="Johan Meneses - Front-end Developer"
+/>
 <meta name="twitter:creator" content="@johanmeci" />
 
 <!-- Additional SEO Meta Tags -->
@@ -95,7 +98,10 @@ const structuredData = {
 <meta name="revisit-after" content="7 days" />
 
 <!-- Keywords -->
-<meta name="keywords" content="Front-end Developer, React Developer, Next.js Developer, JavaScript Developer, TypeScript, Web Development, Portfolio, Johan Meneses, Colombia Developer, WordPress Developer, Vue.js, Email Development" />
+<meta
+  name="keywords"
+  content="Frontend Developer, React Developer, Next.js Developer, JavaScript Developer, TypeScript, Web Development, Portfolio, Johan Meneses, Colombia Developer, WordPress Developer, Vue.js, Email Development"
+/>
 
 <!-- Structured Data (JSON-LD) -->
 <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
@@ -105,5 +111,13 @@ const structuredData = {
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
 
 <!-- Theme Color -->
-<meta name="theme-color" content="#3b82f6" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#1e40af" media="(prefers-color-scheme: dark)" />
+<meta
+  name="theme-color"
+  content="#3b82f6"
+  media="(prefers-color-scheme: light)"
+/>
+<meta
+  name="theme-color"
+  content="#1e40af"
+  media="(prefers-color-scheme: dark)"
+/>

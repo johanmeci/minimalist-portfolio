@@ -8,52 +8,73 @@ import { projects } from "@cv";
 
 <Section title="Projects">
   <div class="icon-container">
-    <ProjectsIcon/>
+    <ProjectsIcon />
   </div>
   <ul>
     {
-      (projects || []).map(({ url, description, links, name, image, technologies, status }) => {
-        return (
-          <li>
-            <article>
-              <header>
-                <h3>
-                  <a href={url} title={`View project ${name}`} target="_blank" rel="noopener noreferrer">
-                    {name}
-                    <ArrowIcon/>
-                  </a>
-                </h3>
-                {image && <img src={image} alt={`${name} project screenshot`} loading="lazy" />}
-                <p>{description}</p>
-              </header>
-              <footer>
-                <div class="container-technologies">
-                  {
-                    (technologies || []).map((technology) => {
+      (projects || []).map(
+        ({ url, description, links, name, image, technologies, status }) => {
+          return (
+            <li>
+              <article>
+                <header>
+                  <h3>
+                    <a
+                      href={url}
+                      title={`View project ${name}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {name}
+                      <ArrowIcon />
+                    </a>
+                  </h3>
+                  {image && (
+                    <img
+                      src={image}
+                      alt={`${name} project screenshot`}
+                      loading="lazy"
+                    />
+                  )}
+                  <p>{description}</p>
+                </header>
+                <footer>
+                  <div class="container-technologies">
+                    {(technologies || []).map((technology) => {
                       return (
                         <span>
-                          <img src={`/assets/icons/${technology}-icon.svg`} alt={`${technology} technology icon`} width="16" height="16" loading="lazy" />
-                          {technology !== 'gsap' && technology}
+                          <img
+                            src={`/assets/icons/${technology}-icon.svg`}
+                            alt={`${technology} technology icon`}
+                            width="16"
+                            height="16"
+                            loading="lazy"
+                          />
+                          {technology !== "gsap" && technology}
                         </span>
-                      )
-                    })
-                  }
-                </div>
-                <div class="container-links">
-                  {
-                    (links || []).map((link) => {
+                      );
+                    })}
+                  </div>
+                  <div class="container-links">
+                    {(links || []).map((link) => {
                       return (
-                        <a href={link.url} target="_blank" rel="noopener noreferrer">{link.label}</a>
-                      )
-                    })
-                  }                
-                </div>          
-                {status && <span class="status">{status}</span>}
-              </footer>
-            </article>  
-          </li>
-        )
-      })
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {link.label}
+                        </a>
+                      );
+                    })}
+                  </div>
+                  {status && <span class="status">{status}</span>}
+                </footer>
+              </article>
+            </li>
+          );
+        },
+      )
     }
   </ul>
 </Section>
@@ -75,7 +96,9 @@ import { projects } from "@cv";
     flex-direction: column;
     padding: 16px;
     height: 100%;
-    transition: transform 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition:
+      transform 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      box-shadow 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   :global(.dark) article {
@@ -99,13 +122,13 @@ import { projects } from "@cv";
       object-position: top;
       width: 100%;
       border-radius: 6px;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
   }
 
   article h3 {
-    margin-bottom: .8rem;
-    color: #FFF;
+    margin-bottom: 0.8rem;
+    color: #fff;
     a {
       width: 100%;
       display: flex;
@@ -137,22 +160,22 @@ import { projects } from "@cv";
   article p {
     font-size: 0.75rem;
     line-height: 1.2rem;
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
   }
 
   article footer {
     display: flex;
     flex-wrap: wrap;
-    gap: .6rem;
+    gap: 0.6rem;
     font-size: 0.6rem;
     position: relative;
     .status {
       position: absolute;
       bottom: 0;
       left: 0;
-      padding-left: .5rem;
+      padding-left: 0.5rem;
       &::after {
-        content: '';
+        content: "";
         width: 5px;
         height: 5px;
         border-radius: 50%;
@@ -185,28 +208,27 @@ import { projects } from "@cv";
   article footer .container-links {
     display: flex;
     flex-wrap: wrap;
-    gap: .6rem;
+    gap: 0.6rem;
     width: 100%;
   }
 
   article footer .container-technologies {
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
     span {
       display: flex;
       align-items: center;
-      gap: .2rem;
+      gap: 0.2rem;
       line-height: 1;
       text-transform: capitalize;
-      font-size: .6rem;
+      font-size: 0.6rem;
       border: 1px solid rgba(227, 211, 211, 0.2);
-      padding: .3rem .3rem;
+      padding: 0.3rem 0.3rem;
       height: 1.5rem;
-      border-radius: .2rem;
+      border-radius: 0.2rem;
       background-color: #17191a;
-      color: #FFF;
+      color: #fff;
     }
-    
   }
 
   article footer .container-links {
