@@ -1,7 +1,7 @@
 :root {
   --line: color-mix(in lch, canvasText, transparent 70%);
   --size: 40px;
-  
+
   /* Color system - Light mode */
   --bg-primary: #ffffff;
   --bg-primary-rgb: 255, 255, 255;
@@ -12,7 +12,7 @@
   --accent-color: #4a89dc;
   --border-color: #eeeeee;
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  
+
   /* Smooth theme transition */
   --transition-theme: background-color 0.3s ease, color 0.3s ease;
 }
@@ -20,7 +20,7 @@
 html.dark {
   background-color: #17191a;
   color: #e3d3d3;
-  
+
   /* Color system - Dark mode */
   --bg-primary: #17191a;
   --bg-primary-rgb: 37, 40, 41;
@@ -42,25 +42,27 @@ body::before {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  background: linear-gradient(
-        90deg,
-        var(--line) 1px,
-        transparent 1px var(--size)
-      )
-      0 -5vmin / var(--size) var(--size),
-    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 0 -5vmin / var(
-        --size
-      ) var(--size);
+  background: linear-gradient(90deg,
+      var(--line) 1px,
+      transparent 1px var(--size)) 0 -5vmin / var(--size) var(--size),
+    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 0 -5vmin / var(--size) var(--size);
   mask: linear-gradient(0, transparent 80%, white);
   top: 0;
   z-index: -1;
 }
 
-.dark h3, .dark h4, .dark h5, .dark h6, .dark p, .dark time, .dark span {
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark time,
+.dark span {
   color: var(--text-secondary);
 }
 
-.dark h1, .dark h2 {
+.dark h1,
+.dark h2 {
   color: var(--text-primary);
 }
 
@@ -102,7 +104,9 @@ a:hover {
   stroke-dashoffset: 0;
 }
 
-section:hover .icon-container svg path, section:hover .icon-container svg circle, section:hover .icon-container svg polyline {
+section:hover .icon-container svg path,
+section:hover .icon-container svg circle,
+section:hover .icon-container svg polyline {
   animation: animateSvg 1s linear forwards;
 }
 
@@ -114,12 +118,15 @@ section:hover .icon-container svg rect {
   0% {
     stroke-dashoffset: 0;
   }
+
   40% {
     stroke-dashoffset: 50;
   }
+
   80% {
     stroke-dashoffset: 100;
   }
+
   100% {
     stroke-dashoffset: 100;
   }
@@ -129,12 +136,15 @@ section:hover .icon-container svg rect {
   0% {
     stroke-dashoffset: 0;
   }
+
   40% {
     stroke-dashoffset: 80;
   }
+
   80% {
     stroke-dashoffset: 160;
   }
+
   100% {
     stroke-dashoffset: 160;
   }
@@ -146,7 +156,7 @@ section:hover .icon-container svg rect {
     background: white;
     color: black;
   }
-  
+
   body::before {
     display: none;
   }

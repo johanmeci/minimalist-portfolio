@@ -169,12 +169,12 @@ const printInfo = [email, linkedUrl].filter(Boolean).join(" • ");
   }
 
   .social-links a {
-    color: var(--text-muted);
+    color: #fefefe;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--border-color);
-    background-color: transparent;
+    background-color: #17191a;
     padding: 4px;
     height: 32px;
     width: 32px;
@@ -188,6 +188,10 @@ const printInfo = [email, linkedUrl].filter(Boolean).join(" • ");
     transform: translateY(-3px);
     box-shadow: var(--card-shadow);
     text-decoration: none;
+  }
+
+  :global(.dark) .social-links a {
+    background-color: #17191a;
   }
 
   @media screen and (max-width: 768px) {
