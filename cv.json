@@ -238,31 +238,42 @@
       ]
     }
   ],
-  "languages": [
-    {
-      "language": "Spanish",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "English",
-      "fluency": "Advanced"
-    }
-  ],
   "projects": [
     {
-      "name": "Landing Page",
-      "description": "High-performance landing page for a beauty and personal care distributor, featuring smooth animations and optimized load times.",
+      "name": "Clinic Dentist",
+      "description": "A complete management system for dental clinics. Streamlines daily operations like patient records, appointment booking, and reports.",
+      "status": "In progress",
       "links": [
         {
           "label": "Preview",
-          "url": "https://edpracol-website.vercel.app/"
+          "url": "https://johanmeneses.dev/"
         }
       ],
-      "url": "https://edpracol-website.vercel.app/",
-      "image": "/assets/projects/edpracol_project.jpg",
+      "url": "https://johanmeneses.dev/",
+      "image": "/assets/projects/clinic_dentist_project.jpeg",
+      "technologies": [
+        "nextjs",
+        "typescript",
+        "supabase",
+        "shadcn",
+        "tailwind"
+      ]
+    },
+    {
+      "name": "Studio Models",
+      "description": "Model agency specializing in talent scouting, professional development and fashion production for national and international clients.",
+      "links": [
+        {
+          "label": "Preview",
+          "url": "https://studio-models.vercel.app"
+        }
+      ],
+      "url": "https://studio-models.vercel.app",
+      "image": "/assets/projects/studio_models.png",
       "technologies": [
         "astro",
-        "gsap"
+        "resend",
+        "nodejs"
       ]
     },
     {
@@ -277,25 +288,25 @@
       "url": "https://gbmedia-website.vercel.app",
       "image": "/assets/projects/gb_project.jpg",
       "technologies": [
-        "react"
+        "react",
+        "prismic"
       ]
     },
     {
-      "name": "Studio Models",
-      "description": "Model agency specializing in talent scouting, professional development and fashion production for national and international clients.",
-      "status": "In progress",
+      "name": "Landing Page",
+      "description": "High-performance landing page for a beauty and personal care distributor, featuring smooth animations and optimized load times.",
       "links": [
         {
           "label": "Preview",
-          "url": "https://studio-models.vercel.app"
+          "url": "https://edpracol-website.vercel.app/"
         }
       ],
-      "url": "https://studio-models.vercel.app",
-      "image": "/assets/projects/studio_models.png",
+      "url": "https://edpracol-website.vercel.app/",
+      "image": "/assets/projects/edpracol_project.jpg",
       "technologies": [
         "astro",
-        "resend",
-        "nodejs"
+        "prismic",
+        "gsap"
       ]
     }
   ]
