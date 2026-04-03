@@ -18,6 +18,9 @@ const { title, description, image, article, canonical } = Astro.props as Props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<SEO
 			title={title}
 			description={description}
@@ -33,6 +36,7 @@ const { title, description, image, article, canonical } = Astro.props as Props;
 <style is:global>
 	html {
 		font-family:
+			"JetBrains Mono",
 			Menlo,
 			Monaco,
 			Lucida Console,
@@ -73,6 +77,7 @@ const { title, description, image, article, canonical } = Astro.props as Props;
 	h6 {
 		margin: 0;
 		font-family:
+			"Space Grotesk",
 			system-ui,
 			-apple-system,
 			BlinkMacSystemFont,

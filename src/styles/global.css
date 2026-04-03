@@ -1,6 +1,6 @@
 :root {
-  --line: color-mix(in lch, canvasText, transparent 70%);
-  --size: 40px;
+  --line: color-mix(in lch, canvasText, transparent 92%);
+  --size: 50px;
 
   /* Color system - Light mode */
   --bg-primary: #ffffff;
@@ -17,11 +17,17 @@
   --transition-theme: background-color 0.3s ease, color 0.3s ease;
 }
 
+html {
+  background-image: linear-gradient(hsl(var(--border)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
+}
+
 html.dark {
-  background-color: #17191a;
+  /* background-color: #17191a; */
+  background-image: linear-gradient(hsl(var(--border)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
   color: #e3d3d3;
 
   /* Color system - Dark mode */
+  --line: color-mix(in lch, canvasText, transparent 82%);
   --bg-primary: #17191a;
   --bg-primary-rgb: 37, 40, 41;
   --bg-secondary: #2e3132;
@@ -29,8 +35,9 @@ html.dark {
   --text-secondary: #e3d3d3;
   --text-muted: #b0b0b0;
   --accent-color: #5c9ce6;
-  --border-color: #3a3a3a;
+  --border-color: #282c33;
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --border: 220 12% 18%;
 }
 
 body {
@@ -46,7 +53,7 @@ body::before {
       var(--line) 1px,
       transparent 1px var(--size)) 0 -5vmin / var(--size) var(--size),
     linear-gradient(var(--line) 1px, transparent 1px var(--size)) 0 -5vmin / var(--size) var(--size);
-  mask: linear-gradient(0, transparent 80%, white);
+  /* mask: linear-gradient(0, transparent 80%, white); */
   top: 0;
   z-index: -1;
 }

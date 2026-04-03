@@ -90,7 +90,7 @@ import { projects } from "@cv";
   article {
     background-color: white;
     border-radius: 6px;
-    border: 1px solid #e3d3d3;
+    border: 1px solid var(--border-color);
     gap: 5px;
     display: flex;
     flex-direction: column;
@@ -102,17 +102,17 @@ import { projects } from "@cv";
   }
 
   :global(.dark) article {
-    border-color: rgba(227, 211, 211, 0.3);
+    border-color: var(--border-color);
     background-color: var(--bg-primary);
+  }
+
+  :global(.dark) article:hover {
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.2);
   }
 
   article:hover {
     transform: translateY(-3px);
     box-shadow: 0px 3px 6px rgba(38, 38, 38, 0.2);
-  }
-
-  :global(.dark) article:hover {
-    box-shadow: 0px 4px 8px rgba(227, 211, 211, 0.2);
   }
 
   article header {
