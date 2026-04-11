@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Johan Meneses",
-    "label": "Frontend Developer",
+    "label": "Senior Frontend Developer | React, Next.js, TypeScript",
     "image": "https://avatars.githubusercontent.com/u/42250585?s=460&u=",
     "email": "johanmeci03@gmail.com",
     "phone": "+573185316578",
-    "url": "https://midu.dev",
-    "summary": "Frontend Developer with 5+ years of experience building scalable web applications and responsive email campaigns. Specialized in React, Next.js, and TypeScript for modern product interfaces, and in HTML email development using Braze, Salesforce Marketing Cloud, Stripo, and Email on Acid. Open to remote opportunities with US/EU-based companies.",
+    "url": "https://johanmeneses.dev",
+    "summary": "Senior Frontend Developer with 5+ years of experience building scalable, user-focused web products with React, Next.js, and TypeScript. I’ve worked across product development, CMS-driven platforms, client-facing websites, and internal tools, with a strong focus on performance, maintainability, and clean user experiences. I also bring hands-on experience in end-to-end HTML email development and campaign delivery for audiences of 100K+ subscribers, which gives me the flexibility to adapt to different frontend and marketing technology needs. Based in Colombia, fully remote, and open to opportunities with US and EU teams.",
     "location": {
       "address": "",
       "postalCode": "0000",
@@ -39,7 +39,7 @@
       "url": "https://www.linkedin.com/company/takeoff-media/",
       "startDate": "2022-07-01",
       "endDate": null,
-      "summary": "→ Develop and maintain modern web applications using Next.js, React, and TypeScript, integrating Prismic headless CMS for dynamic content delivery across multiple markets.\n\n→ Execute the end-to-end HTML email development workflow — from design and coding to cross-client testing and deployment — for a global audience of 100,000+ subscribers.\n\n→ Manage responsive email campaigns using Stripo for design, Email on Acid for QA testing, and Braze / Salesforce Marketing Cloud for deployment and automation.\n\n→ Support Vue.js projects across the team's stack, ensuring stability, performance, and long-term maintainability.\n\n📦 Next.js · React · TypeScript · Prismic · HTML Email Development · Stripo · Email on Acid · Braze · Salesforce Marketing Cloud · Vue.js · Git · REST API"
+      "summary": "→ Build and maintain production web applications for multiple markets using Next.js, React, TypeScript, and Prismic, helping teams ship scalable, content-driven experiences.\n\n→ Own the end-to-end HTML email development process, from implementation and cross-client QA to deployment, supporting campaigns sent to 100K+ subscribers.\n\n→ Deliver responsive email campaigns through Stripo, Email on Acid, Braze, and Salesforce Marketing Cloud, improving execution reliability across major email clients.\n\n→ Contribute across a mixed frontend stack that includes Vue.js, balancing feature delivery, performance, and long-term maintainability.\n\n📦 Next.js · React · TypeScript · Prismic · HTML Email Development · Stripo · Email on Acid · Braze · Salesforce Marketing Cloud · Vue.js · REST API"
     },
     {
       "name": "Siesa",
@@ -47,14 +47,14 @@
       "url": "https://www.linkedin.com/company/siesa/",
       "startDate": "2018-10-01",
       "endDate": "2021-10-01",
-      "summary": "→ Developed custom WordPress plugins in PHP to implement tailored features for the support department, eliminating manual processes for 200+ internal users.\n\n→ Integrated internal systems via REST API, automating key data workflows and reducing manual data entry by an estimated 40%.\n\n→ Maintained two high-traffic platforms — a public-facing customer support portal and a company-wide intranet — improving operational efficiency and system reliability for 500+ employees.\n\n📦 PHP · WordPress · MySQL · REST API · JavaScript · HTML · CSS"
+      "summary": "→ Developed custom WordPress plugins in PHP that replaced manual support workflows for 200+ internal users.\n\n→ Integrated internal systems through REST APIs, automating key processes and reducing manual data entry by an estimated 40%.\n\n→ Maintained a public customer support portal and a company-wide intranet, improving reliability and day-to-day efficiency for 500+ employees.\n\n📦 PHP · WordPress · MySQL · REST API · JavaScript · HTML · CSS"
     },
     {
       "name": "GB Media Group",
       "position": "Frontend Developer",
       "startDate": "2017-09-01",
       "endDate": "2018-09-01",
-      "summary": "→ Developed fully responsive, cross-browser websites using React, JavaScript, HTML, and CSS for multiple clients, translating complex designs into clean, maintainable code.\n\n→ Designed high-fidelity prototypes and wireframes in Adobe Illustrator, collaborating directly with clients to validate design and requirements before development.\n\n→ Managed the complete deployment lifecycle for 5+ client projects, including domain configuration, SSL certificates, email setup, and ongoing site administration.\n\n→ Built custom features using PHP for backend functionality and dynamic content integration.\n\n📦 React · JavaScript · HTML · CSS · PHP · Adobe Illustrator · Git · Responsive Design · Cross-browser Compatibility"
+      "summary": "→ Built responsive, cross-browser websites for multiple clients using React, JavaScript, HTML, and CSS, turning complex designs into maintainable production code.\n\n→ Collaborated directly with clients on wireframes and visual prototypes, helping align requirements before development started.\n\n→ Managed deployment and launch tasks for 5+ client projects, including domains, SSL, email setup, and ongoing site administration.\n\n→ Implemented custom PHP features to support backend functionality and dynamic content needs.\n\n📦 React · JavaScript · HTML · CSS · PHP · Responsive Design · Cross-browser Compatibility"
     }
   ],
   "education": [
@@ -86,15 +86,39 @@
       "score": "4.5"
     }
   ],
-  "certificates": [
-    {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
-    }
-  ],
+  "certificates": [],
   "skills": [
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
     {
       "name": "HTML",
       "level": "Master",
@@ -133,16 +157,6 @@
       ]
     },
     {
-      "name": "TypeScript",
-      "level": "Advanced",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "JavaScript Superset"
-      ]
-    },
-    {
       "name": "MySQL",
       "level": "Advanced",
       "keywords": [
@@ -153,52 +167,22 @@
       ]
     },
     {
-      "name": "Git",
-      "level": "Advanced",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Advanced",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Advanced",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Advanced",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
-    },
-    {
       "name": "Prismic",
       "level": "Advanced",
       "keywords": [
         "Headless CMS",
         "Content Management",
         "API"
+      ]
+    },
+    {
+      "name": "Supabase",
+      "level": "Advanced",
+      "keywords": [
+        "Backend as a Service",
+        "Databases",
+        "Authentication",
+        "Realtime"
       ]
     },
     {
@@ -236,20 +220,33 @@
         "Marketing Cloud",
         "Enterprise"
       ]
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Advanced",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
     }
   ],
   "projects": [
     {
       "name": "Clinic Dentist",
-      "description": "A complete management system for dental clinics. Streamlines daily operations like patient records, appointment booking, and reports.",
+      "description": "Private client project: a full-stack platform for dental clinics covering patient records, appointment scheduling, and treatment billing. Includes an interactive digital odontogram for clinical tracking and role-based access for admins, dentists, and receptionists.",
       "status": "In progress",
-      "links": [
-        {
-          "label": "Preview",
-          "url": "https://johanmeneses.dev/"
-        }
-      ],
-      "url": "https://johanmeneses.dev/",
+      "links": [],
       "image": "/assets/projects/clinic_dentist_project.jpeg",
       "technologies": [
         "nextjs",
@@ -257,11 +254,12 @@
         "supabase",
         "shadcn",
         "tailwind"
-      ]
+      ],
+      "slug": "clinic-dentist"
     },
     {
       "name": "Studio Models",
-      "description": "Model agency specializing in talent scouting, professional development and fashion production for national and international clients.",
+      "description": "Marketing website for a model agency focused on talent scouting and fashion production. Built with Astro for fast performance and integrated Resend to streamline contact and inquiry workflows.",
       "links": [
         {
           "label": "Preview",
@@ -278,7 +276,7 @@
     },
     {
       "name": "GB Media Group",
-      "description": "Corporate website for a business group offering digital services, focusing on modern UI, fast rendering, and responsive design.",
+      "description": "Corporate website for a digital services agency, built with React and Prismic. Designed to give non-technical teams a flexible editing experience while keeping the UI clean, responsive, and easy to maintain.",
       "links": [
         {
           "label": "Preview",
@@ -293,8 +291,8 @@
       ]
     },
     {
-      "name": "Landing Page",
-      "description": "High-performance landing page for a beauty and personal care distributor, featuring smooth animations and optimized load times.",
+      "name": "Edpracol Website",
+      "description": "High-performance landing page for a beauty and personal care distributor. Combines GSAP animations, Prismic CMS, and performance-focused implementation to deliver a polished experience with strong Core Web Vitals.",
       "links": [
         {
           "label": "Preview",

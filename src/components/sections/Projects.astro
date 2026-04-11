@@ -13,12 +13,12 @@ import { projects } from "@cv";
   <ul>
     {
       (projects || []).map(
-        ({ url, description, links, name, image, technologies, status }) => {
+        ({ url, description, links, name, image, technologies, status, slug }) => {
           return (
             <li>
               <article>
                 <header>
-                  <h3>
+                  <h3 transition:name={slug ? `${slug}-title` : undefined}>
                     <a
                       href={url}
                       title={`View project ${name}`}
@@ -34,6 +34,7 @@ import { projects } from "@cv";
                       src={image}
                       alt={`${name} project screenshot`}
                       loading="lazy"
+                      transition:name={slug ? `${slug}-image` : undefined}
                     />
                   )}
                   <p>{description}</p>
@@ -67,6 +68,11 @@ import { projects } from "@cv";
                         </a>
                       );
                     })}
+                    {slug && (
+                      <a href={`/projects/${slug}`} class="details-link">
+                        Details →
+                      </a>
+                    )}
                   </div>
                   {status && <span class="status">{status}</span>}
                 </footer>
@@ -202,6 +208,18 @@ import { projects } from "@cv";
     font-weight: 500;
     padding: 0.2rem 0.6rem;
     text-decoration: none;
+  }
+
+  article footer a.details-link {
+    background-color: rgba(74, 137, 220, 0.12);
+    color: #4a89dc;
+    border: 1px solid rgba(74, 137, 220, 0.35);
+  }
+
+  :global(.dark) article footer a.details-link {
+    background-color: rgba(92, 156, 230, 0.12);
+    color: #5c9ce6;
+    border: 1px solid rgba(92, 156, 230, 0.35);
   }
 
   article footer .container-technologies,

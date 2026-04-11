@@ -1,0 +1,360 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import "@/styles/global.css";
+import data from "@/data/clinic-dentist.json";
+---
+
+<Layout
+  title={`${data.name} — Johan Meneses`}
+  description={data.tagline}
+>
+  <main>
+    <a href="/" class="back-link" id="back-link">← Back to portfolio</a>
+
+    <header class="hero">
+      <img
+        src="/assets/projects/clinic_dentist_project.jpeg"
+        alt="Clinic Dentist project screenshot"
+        class="hero-image"
+        loading="eager"
+        transition:name="clinic-dentist-image"
+      />
+      <div class="hero-meta">
+        <span class="status-badge">{data.status}</span>
+      </div>
+      <h1 transition:name="clinic-dentist-title">{data.name}</h1>
+      <p class="tagline">{data.tagline}</p>
+      <div class="tech-stack">
+        {data.technologies.map((tech) => (
+          <span class="tech-pill">
+            <img
+              src={`/assets/icons/${tech}-icon.svg`}
+              alt={`${tech} icon`}
+              width="14"
+              height="14"
+              loading="lazy"
+            />
+            {tech}
+          </span>
+        ))}
+      </div>
+    </header>
+
+    <section class="content-section">
+      <h2>About this project</h2>
+      <p>{data.description}</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Key Highlights</h2>
+      <div class="highlights-grid">
+        {data.highlights.map((highlight) => (
+          <div class="highlight-card">
+            <h3>{highlight.title}</h3>
+            <p>{highlight.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Challenges &amp; Solutions</h2>
+      <div class="challenges-list">
+        {data.challenges.map((challenge) => (
+          <div class="challenge-card">
+            <h3>{challenge.title}</h3>
+            <div class="problem-block">
+              <span class="block-label">Problem</span>
+              <p>{challenge.problem}</p>
+            </div>
+            <div class="solution-block">
+              <span class="block-label">Solution</span>
+              <p>{challenge.solution}</p>
+            </div>
+            {challenge.image && (
+              <img
+                src={challenge.image}
+                alt={`${challenge.title} screenshot`}
+                class="challenge-image"
+                loading="lazy"
+              />
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+  </main>
+</Layout>
+
+
+<style>
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .back-link {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: color 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .back-link:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+
+  /* Hero */
+  .hero {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .hero-image {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    border: 1px solid var(--border-color);
+  }
+
+  .hero-meta {
+    margin-bottom: 0.8rem;
+  }
+
+  .status-badge {
+    font-size: 0.65rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    background-color: rgba(74, 137, 220, 0.12);
+    color: var(--accent-color);
+    border: 1px solid rgba(74, 137, 220, 0.3);
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0.5rem 0 0.4rem;
+    line-height: 1.2;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tech-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.6rem;
+    text-transform: capitalize;
+    padding: 0.3rem 0.5rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    background-color: #17191a;
+    color: #fff;
+    border: 1px solid rgba(227, 211, 211, 0.2);
+    line-height: 1;
+  }
+
+  :global(.dark) .tech-pill {
+    background-color: #2e3132;
+  }
+
+  /* Sections */
+  .content-section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  :global(.dark) .content-section {
+    border-bottom-color: #3c4144;
+  }
+
+  .content-section:last-child {
+    border-bottom: none;
+  }
+
+  .content-section h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    letter-spacing: 0.02rem;
+  }
+
+  .content-section > p {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+  }
+
+  /* Highlights */
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .highlight-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem 1.1rem;
+    transition:
+      transform 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      box-shadow 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .highlight-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--card-shadow);
+  }
+
+  .highlight-card h3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.4rem;
+  }
+
+  .highlight-card p {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    margin: 0;
+  }
+
+  /* Challenges */
+  .challenges-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .challenge-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+  }
+
+  .challenge-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+  }
+
+  .problem-block,
+  .solution-block {
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .problem-block {
+    border-left: 3px solid #e05c5c;
+    background-color: rgba(224, 92, 92, 0.06);
+  }
+
+  .solution-block {
+    border-left: 3px solid #4a89dc;
+    background-color: rgba(74, 137, 220, 0.06);
+    margin-bottom: 0;
+  }
+
+  .block-label {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.4rem;
+    color: var(--text-muted);
+  }
+
+  .problem-block .block-label {
+    color: #e05c5c;
+  }
+
+  .solution-block .block-label {
+    color: var(--accent-color);
+  }
+
+  .problem-block p,
+  .solution-block p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--text-secondary);
+  }
+
+  .challenge-image {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 1rem;
+    border: 1px solid var(--border-color);
+    object-fit: cover;
+  }
+
+  /* Dark mode overrides */
+  :global(.dark) .hero {
+    border-bottom-color: #3c4144;
+  }
+
+  :global(.dark) .highlight-card,
+  :global(.dark) .challenge-card {
+    border-color: var(--border-color);
+  }
+
+  :global(.dark) .highlight-card:hover {
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.08);
+  }
+
+  :global(.dark) .problem-block {
+    background-color: rgba(224, 92, 92, 0.09);
+  }
+
+  :global(.dark) .solution-block {
+    background-color: rgba(92, 156, 230, 0.09);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    main {
+      padding: 3.5rem 1.5rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+
+    .highlights-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

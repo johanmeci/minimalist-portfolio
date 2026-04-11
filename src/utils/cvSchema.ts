@@ -69,7 +69,8 @@ export const projectSchema = z.object({
   url: z.string().url().optional(),
   image: z.string().optional(),
   status: z.string().optional(),
-  technologies: z.array(z.string()).optional()
+  technologies: z.array(z.string()).optional(),
+  slug: z.string().optional()
 });
 
 export const cvSchema = z.object({
