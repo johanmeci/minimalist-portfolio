@@ -1,44 +1,44 @@
 {
   "name": "Clinic Dentist",
   "tagline": "Full-stack management system for dental clinics",
-  "description": "Private client project — a comprehensive web platform built to modernize the daily operations of a dental clinic. The system covers patient record management, appointment scheduling, treatment tracking, and operational reporting. Designed for multi-role access and server-validated workflows, it brings structure and efficiency to clinical workflows that were previously handled manually.",
+  "description": "Private client project — a full-stack web platform built to streamline the daily operations of a dental clinic. The system covers patient management, appointment scheduling, odontogram tracking, radiography uploads, treatment planning, and payment follow-up. Designed with role-aware workflows and server-side validation, it helps replace manual processes with a more structured and efficient clinical workflow.",
   "status": "In progress",
   "technologies": ["nextjs", "typescript", "supabase", "shadcn", "tailwind"],
   "highlights": [
     {
       "title": "Patient Records",
-      "description": "Centralized digital histories for each patient — treatments, diagnoses, uploaded documents, and visit notes — all in one searchable view."
+      "description": "Centralized patient profiles with contact data, appointment history, odontogram tracking, radiography uploads, administrative notes, and treatment plans."
     },
     {
       "title": "Appointment Scheduling",
-      "description": "Calendar-based booking system with conflict detection and automated status updates for each appointment."
+      "description": "Weekly calendar-based scheduling with server-side conflict validation, occupied-slot awareness in the UI, and appointment status management."
     },
     {
       "title": "Role-based Access",
-      "description": "Distinct permission levels for admins, dentists, and receptionists — each role sees only the data and actions relevant to their workflow."
+      "description": "Distinct permission levels for admins, dentists, and reception staff, with role-aware navigation and restricted sections based on each workflow."
     },
     {
-      "title": "Operational Reporting",
-      "description": "Dashboard with key clinical and operational metrics: daily appointment occupancy rate, total patient count, high-risk patient alerts based on odontogram findings, and a live view of today's schedule with per-appointment status."
+      "title": "Operational Dashboard",
+      "description": "Dashboard with daily occupancy, total patient count, odontogram-based risk alerts, and a quick view of today's schedule with appointment statuses."
     }
   ],
   "challenges": [
     {
-      "title": "Real-time appointment conflicts",
-      "problem": "Multiple receptionists could simultaneously book the same time slot for a dentist, leading to double bookings that were only caught after confirmation.",
-      "solution": "Implemented server-side conflict detection using time range intersection logic — a booking is rejected if any existing appointment for the same dentist satisfies inicio < newEnd AND fin > newStart, excluding cancelled appointments. The booking form also fetches occupied slots upfront and renders them as disabled in the UI, preventing most conflicts before submission.",
+      "title": "Appointment conflict validation",
+      "problem": "The clinic needed to prevent overlapping bookings during scheduling, especially when multiple appointments could be created around the same time.",
+      "solution": "Implemented server-side conflict detection using time-range intersection logic, rejecting bookings when an existing active appointment overlaps the requested slot. The booking form also loads busy slots in advance and disables conflicting times in the UI.",
       "image": null
     },
     {
-      "title": "Multi-role data isolation",
-      "problem": "The application needed to serve admins, dentists, and receptionists with different views and permissions — without duplicating logic or creating separate apps.",
-      "solution": "Built a single Next.js app with route-level and component-level guards driven by a role context stored in a profiles table linked to Supabase auth. Server components fetch only the data allowed for the current role, and Supabase RLS policies enforce the same rules at the database level.",
+      "title": "Role-aware access control",
+      "problem": "The application needed to support admins, dentists, and reception staff with different views and responsibilities without splitting the product into separate tools.",
+      "solution": "Built a single Next.js application with role-based navigation and guarded sections backed by Supabase authentication and profile roles, allowing each user type to access only the areas relevant to their workflow.",
       "image": null
     },
     {
-      "title": "Treatment history traceability",
-      "problem": "Clinic staff needed a complete, immutable audit trail of every treatment applied to a patient — including who performed it and when — but the initial schema only stored the latest state.",
-      "solution": "Redesigned the treatment schema with an append-only pattern: each clinical event is recorded as a new row in an evolutions table, storing the previous condition, the treatment applied, the affected tooth and surface, and a timestamp. The UI renders this as a chronological timeline per patient, giving staff a full traceable record of every intervention.",
+      "title": "Clinical history traceability",
+      "problem": "The clinic needed a better way to preserve the progression of treatments instead of only storing the latest odontogram state.",
+      "solution": "Added a dedicated dental evolution flow where each clinical update is stored as a new historical record, including tooth, surface, previous diagnosis, treatment applied, and description, while also syncing the current odontogram state for day-to-day use.",
       "image": null
     }
   ]
