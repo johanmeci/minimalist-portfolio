@@ -6,7 +6,7 @@
     "email": "johanmeci03@gmail.com",
     "phone": "+573185316578",
     "url": "https://johanmeneses.dev",
-    "summary": "Frontend Developer with 5+ years of experience building modern web applications with React, Next.js, and TypeScript. I specialize in creating scalable, user-focused products and have worked across product development, CMS-driven platforms (Prismic), and end-to-end HTML email campaigns for global audiences of 100K+ subscribers.\n\nI'm actively transitioning to fullstack development, learning Node.js, NestJS, PostgreSQL, and AI integration with LangChain and Anthropic API. My focus is on building intelligent, production-ready applications that combine strong frontend experiences with robust backend architecture.\n\nCurrently based in Colombia, fully remote. I'm open to opportunities with forward-thinking US and EU-based companies that value both technical excellence and continuous learning.",
+    "summary": "Frontend Developer with 5+ years of experience building web applications with React, Next.js, and TypeScript. Most of my work has been focused on product development, CMS projects with Prismic, and frontend experiences that need to be fast, clear, and easy to maintain. I also have hands on experience with HTML email development for global audiences of 100K+ subscribers, which has made me comfortable adapting to different team and business needs.\n\nLately, I have also been expanding into backend development with Node.js, NestJS, PostgreSQL, and AI integrations using tools like LangChain and the Anthropic API. My goal is to keep growing into the kind of engineer who can build solid frontend experiences and contribute more across the full product.\n\nBased in Colombia, fully remote, and open to opportunities with US and EU teams.",
     "location": {
       "address": "",
       "postalCode": "0000",
@@ -39,7 +39,7 @@
       "url": "https://www.linkedin.com/company/takeoff-media/",
       "startDate": "2022-07-01",
       "endDate": null,
-      "summary": "→ Develop and maintain modern web applications using Next.js, React, and TypeScript, integrating Prismic headless CMS to deliver dynamic, content-driven experiences across multiple markets.\n\n→ Design and execute responsive HTML email campaigns using Stripo, Email on Acid, Braze, and Salesforce Marketing Cloud for 100,000+ subscribers, ensuring cross-client compatibility and rendering consistency.\n\n→ Contribute to Vue.js projects across the team's mixed frontend stack, ensuring performance optimization and long-term code maintainability.\n\n📦 Next.js · React · TypeScript · Prismic · HTML Email Development · Stripo · Email on Acid · Braze · Salesforce Marketing Cloud · Vue.js · REST API"
+      "summary": "→ Develop and maintain modern web applications using Next.js, React, and TypeScript, integrating Prismic headless CMS to deliver dynamic, content driven experiences across multiple markets.\n\n→ Design and execute responsive HTML email campaigns using Stripo, Email on Acid, Braze, and Salesforce Marketing Cloud for 100,000+ subscribers, ensuring cross client compatibility and rendering consistency.\n\n→ Contribute to Vue.js projects across the team's mixed frontend stack, ensuring performance optimization and long term code maintainability.\n\n📦 Next.js · React · TypeScript · Prismic · HTML Email Development · Stripo · Email on Acid · Braze · Salesforce Marketing Cloud · Vue.js · REST API"
     },
     {
       "name": "Siesa",
@@ -47,14 +47,14 @@
       "url": "https://www.linkedin.com/company/siesa/",
       "startDate": "2018-10-01",
       "endDate": "2021-10-01",
-      "summary": "→ Built a company intranet serving 200+ employees with custom WordPress plugins and themes, enabling users to publish posts, view marketing announcements, create peer-to-peer announcements, and authenticate via company Active Directory — improving internal communication and reducing reliance on email.\n\n→ Developed a customer support portal with custom WordPress plugins and themes that allowed clients to create and manage support tickets, communicate with support teams in real-time, access product documentation, and join live webinars — reducing support phone line volume by an estimated 40% and enabling the support team to handle more complex issues.\n\n→ Designed MySQL database schemas to support multi-user workflows, real-time communication, and reporting across both platforms.\n\n→ Integrated REST APIs to connect WordPress with internal systems (Active Directory, ticketing backend) and external services, enabling seamless data flow across the organization.\n\n📦 PHP · WordPress · MySQL · REST API · JavaScript · HTML · CSS · Active Directory Integration · Custom Themes & Plugins"
+      "summary": "→ Built a company intranet serving 200+ employees with custom WordPress plugins and themes, enabling users to publish posts, view marketing announcements, create peer to peer announcements, and authenticate via company Active Directory, improving internal communication and reducing reliance on email.\n\n→ Developed a customer support portal with custom WordPress plugins and themes that allowed clients to create and manage support tickets, communicate with support teams in real time, access product documentation, and join live webinars, reducing support phone line volume by an estimated 40% and enabling the support team to handle more complex issues.\n\n→ Designed MySQL database schemas to support multi user workflows, real time communication, and reporting across both platforms.\n\n→ Integrated REST APIs to connect WordPress with internal systems (Active Directory, ticketing backend) and external services, enabling seamless data flow across the organization.\n\n📦 PHP · WordPress · MySQL · REST API · JavaScript · HTML · CSS · Active Directory Integration · Custom Themes & Plugins"
     },
     {
       "name": "GB Media Group",
       "position": "Frontend Developer",
       "startDate": "2017-09-01",
       "endDate": "2018-09-01",
-      "summary": "→ Developed fully responsive, cross-browser websites using React, JavaScript, HTML, and CSS for multiple clients, translating complex designs into clean, maintainable code.\n\n→ Designed and validated high-fidelity prototypes and wireframes in Adobe Illustrator with clients before development, ensuring alignment on requirements.\n\n→ Built the first web presence for 5+ clients with optimized contact forms that drove qualified leads directly to their businesses; implemented SEO fundamentals (on-page optimization, site structure, performance) to improve organic discoverability.\n\n→ Managed complete deployment lifecycle for all projects, including domain configuration, SSL certificates, email setup, and ongoing site administration.\n\n→ Built custom PHP features for backend functionality and dynamic content integration.\n\n📦 React · JavaScript · HTML · CSS · PHP · Adobe Illustrator · SEO Fundamentals · Responsive Design · Cross-browser Compatibility"
+      "summary": "→ Developed fully responsive, cross browser websites using React, JavaScript, HTML, and CSS for multiple clients, translating complex designs into clean, maintainable code.\n\n→ Designed and validated high fidelity prototypes and wireframes in Adobe Illustrator with clients before development, ensuring alignment on requirements.\n\n→ Built the first web presence for 5+ clients with optimized contact forms that drove qualified leads directly to their businesses; implemented SEO fundamentals (on page optimization, site structure, performance) to improve organic discoverability.\n\n→ Managed complete deployment lifecycle for all projects, including domain configuration, SSL certificates, email setup, and ongoing site administration.\n\n→ Built custom PHP features for backend functionality and dynamic content integration.\n\n📦 React · JavaScript · HTML · CSS · PHP · Adobe Illustrator · SEO Fundamentals · Responsive Design · Cross browser Compatibility"
     }
   ],
   "education": [
@@ -244,7 +244,7 @@
   "projects": [
     {
       "name": "Clinic Dentist",
-      "description": "Private client project: a full-stack platform for dental clinics covering patient records, appointment scheduling, and treatment billing. Includes an interactive digital odontogram for clinical tracking and role-based access for admins, dentists, and receptionists.",
+      "description": "Private client project: a full stack platform for dental clinics that handles patient records, appointment scheduling, and treatment billing. It includes an interactive digital odontogram for clinical tracking and access controls for admins, dentists, and receptionists.",
       "status": "In progress",
       "links": [],
       "image": "/assets/projects/clinic_dentist_project.jpeg",
@@ -276,7 +276,7 @@
     },
     {
       "name": "GB Media Group",
-      "description": "Corporate website for a digital services agency, built with React and Prismic. Designed to give non-technical teams a flexible editing experience while keeping the UI clean, responsive, and easy to maintain.",
+      "description": "Corporate website for a digital services agency, built with React and Prismic. The goal was to give nontechnical teams an easy editing experience while keeping the interface clean, responsive, and simple to maintain.",
       "links": [
         {
           "label": "Preview",
@@ -292,7 +292,7 @@
     },
     {
       "name": "Edpracol Website",
-      "description": "High-performance landing page for a beauty and personal care distributor. Combines GSAP animations, Prismic CMS, and performance-focused implementation to deliver a polished experience with strong Core Web Vitals.",
+      "description": "High performance landing page for a beauty and personal care distributor. Built with GSAP animations and Prismic CMS, with special attention to smooth interactions and strong Core Web Vitals.",
       "links": [
         {
           "label": "Preview",
