@@ -24,6 +24,9 @@ import { projects } from "@cv";
                       title={`View project ${name}`}
                       target="_blank"
                       rel="noopener noreferrer"
+                      data-analytics-event="project_click"
+                      data-analytics-label={name}
+                      data-analytics-location="projects_title"
                     >
                       {name}
                       <ArrowIcon />
@@ -63,13 +66,22 @@ import { projects } from "@cv";
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
+                          data-analytics-event="project_link_click"
+                          data-analytics-label={`${name}:${link.label}`}
+                          data-analytics-location="projects_footer"
                         >
                           {link.label}
                         </a>
                       );
                     })}
                     {slug && (
-                      <a href={`/projects/${slug}`} class="details-link">
+                      <a
+                        href={`/projects/${slug}`}
+                        class="details-link"
+                        data-analytics-event="project_details_click"
+                        data-analytics-label={name}
+                        data-analytics-location="projects_footer"
+                      >
                         Details →
                       </a>
                     )}

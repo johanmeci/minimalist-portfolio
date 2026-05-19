@@ -43,6 +43,9 @@ const printInfo = [email, linkedUrl].filter(Boolean).join(" • ");
               title={`Send an email to ${name} at ${email}`}
               target="_blank"
               rel="noopener noreferrer"
+              data-analytics-event="contact_click"
+              data-analytics-label="email"
+              data-analytics-location="hero"
             >
               <Mail />
             </a>
@@ -62,6 +65,9 @@ const printInfo = [email, linkedUrl].filter(Boolean).join(" • ");
                 target="_blank"
                 rel="noopener noreferrer"
                 download={network === "CV" ? `Johan_Meneses_CV.pdf` : undefined}
+                data-analytics-event={network === "CV" ? "cv_download_click" : "social_click"}
+                data-analytics-label={network.toLowerCase()}
+                data-analytics-location="hero"
               >
                 <Icon />
               </a>

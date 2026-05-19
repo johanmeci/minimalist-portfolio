@@ -39,10 +39,51 @@ const { title, description, image, article, canonical } = Astro.props as Props;
 		<script is:inline>
 			(() => {
 				window.dataLayer = window.dataLayer || [];
+				const scrollMilestones = new Set();
 
 				const pushVirtualPageview = () => {
 					window.dataLayer.push({
 						event: 'virtual_pageview',
+						page_location: window.location.href,
+						page_path: window.location.pathname,
+						page_title: document.title
+					});
+				};
+
+				const trackScrollDepth = () => {
+					const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+					if (documentHeight <= 0) return;
+
+					const percentScrolled = Math.round((window.scrollY / documentHeight) * 100);
+					const milestones = [25, 50, 75, 100];
+
+					milestones.forEach((milestone) => {
+						if (percentScrolled >= milestone && !scrollMilestones.has(milestone)) {
+							scrollMilestones.add(milestone);
+							window.dataLayer.push({
+								event: 'scroll_depth',
+								percent_scrolled: milestone,
+								page_location: window.location.href,
+								page_path: window.location.pathname,
+								page_title: document.title
+							});
+						}
+					});
+				};
+
+				const trackAnalyticsClick = (event) => {
+					const target = event.target instanceof Element
+						? event.target.closest('[data-analytics-event]')
+						: null;
+
+					if (!(target instanceof HTMLElement)) return;
+
+					window.dataLayer.push({
+						event: target.dataset.analyticsEvent || 'ui_click',
+						element_label: target.dataset.analyticsLabel || target.textContent?.trim() || 'unknown',
+						element_location: target.dataset.analyticsLocation || 'unknown',
+						element_type: target.tagName.toLowerCase(),
+						link_url: target instanceof HTMLAnchorElement ? target.href : undefined,
 						page_location: window.location.href,
 						page_path: window.location.pathname,
 						page_title: document.title
@@ -57,6 +98,8 @@ const { title, description, image, article, canonical } = Astro.props as Props;
 
 				// Track the initial page load through GTM only.
 				pushVirtualPageview();
+				window.addEventListener('scroll', trackScrollDepth, { passive: true });
+				document.addEventListener('click', trackAnalyticsClick);
 			})();
 
 			// Save scroll of the current page before any navigation leaves it
