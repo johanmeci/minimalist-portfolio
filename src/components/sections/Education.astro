@@ -19,22 +19,33 @@ import { education } from "@cv";
             : new Date().getTime();
           return bTime - aTime;
         })
-        .map(({ institution, startDate, endDate, area }) => {
+        .map(({ institution, startDate, endDate, area }, index) => {
           const startYear = startDate
             ? new Date(startDate).getFullYear()
-            : "N/A";
+            : null;
           const endYear = endDate ? new Date(endDate).getFullYear() : "Actual";
-          const years =
-            startYear === endYear ? startYear : `${startYear} - ${endYear}`;
+          const sameYear = startYear === endYear;
 
           return (
-            <li>
+            <li data-reveal style={`--reveal-index: ${index}`}>
               <article>
                 <header>
                   <div>
                     <h3>{institution}</h3>
                   </div>
-                  <time>{years}</time>
+                  <span class="years">
+                    {startYear && !sameYear && (
+                      <>
+                        <time datetime={String(startYear)}>{startYear}</time>
+                        {" - "}
+                      </>
+                    )}
+                    {endDate ? (
+                      <time datetime={String(endYear)}>{endYear}</time>
+                    ) : (
+                      <span>{endYear}</span>
+                    )}
+                  </span>
                 </header>
                 <footer>
                   <p>{area}</p>
@@ -66,6 +77,7 @@ import { education } from "@cv";
     margin-bottom: 4px;
   }
 
+  .years,
   time {
     color: var(--text-muted);
     font-size: 0.85rem;

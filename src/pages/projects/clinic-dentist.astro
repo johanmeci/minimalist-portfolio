@@ -8,7 +8,7 @@ import data from "@/data/clinic-dentist.json";
   title={`${data.name} — Johan Meneses`}
   description={data.tagline}
 >
-  <main>
+  <main id="main-content">
     <a href="/" class="back-link" id="back-link">← Back</a>
 
     <header class="hero">
@@ -136,9 +136,9 @@ import data from "@/data/clinic-dentist.json";
     letter-spacing: 0.08em;
     padding: 0.25rem 0.6rem;
     border-radius: 999px;
-    background-color: rgba(74, 137, 220, 0.12);
+    background-color: color-mix(in srgb, var(--accent-color) 12%, transparent);
     color: var(--accent-color);
-    border: 1px solid rgba(74, 137, 220, 0.3);
+    border: 1px solid color-mix(in srgb, var(--accent-color) 30%, transparent);
   }
 
   .hero h1 {
@@ -170,15 +170,11 @@ import data from "@/data/clinic-dentist.json";
     text-transform: capitalize;
     padding: 0.3rem 0.5rem;
     height: 1.5rem;
-    border-radius: 0.2rem;
-    background-color: #17191a;
-    color: #fff;
-    border: 1px solid rgba(227, 211, 211, 0.2);
+    border-radius: 0.25rem;
+    background-color: var(--chip-bg);
+    color: var(--chip-text);
+    border: 1px solid color-mix(in srgb, var(--chip-bg), transparent 60%);
     line-height: 1;
-  }
-
-  :global(.dark) .tech-pill {
-    background-color: #2e3132;
   }
 
   /* Sections */
@@ -276,13 +272,13 @@ import data from "@/data/clinic-dentist.json";
   }
 
   .problem-block {
-    border-left: 3px solid #e05c5c;
-    background-color: rgba(224, 92, 92, 0.06);
+    border-left: 3px solid var(--danger-color);
+    background-color: color-mix(in srgb, var(--danger-color) 7%, transparent);
   }
 
   .solution-block {
-    border-left: 3px solid #4a89dc;
-    background-color: rgba(74, 137, 220, 0.06);
+    border-left: 3px solid var(--accent-color);
+    background-color: color-mix(in srgb, var(--accent-color) 7%, transparent);
     margin-bottom: 0;
   }
 
@@ -297,7 +293,7 @@ import data from "@/data/clinic-dentist.json";
   }
 
   .problem-block .block-label {
-    color: #e05c5c;
+    color: var(--danger-color);
   }
 
   .solution-block .block-label {
@@ -331,15 +327,7 @@ import data from "@/data/clinic-dentist.json";
   }
 
   :global(.dark) .highlight-card:hover {
-    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.08);
-  }
-
-  :global(.dark) .problem-block {
-    background-color: rgba(224, 92, 92, 0.09);
-  }
-
-  :global(.dark) .solution-block {
-    background-color: rgba(92, 156, 230, 0.09);
+    box-shadow: var(--card-shadow);
   }
 
   /* Responsive */

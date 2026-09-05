@@ -17,17 +17,13 @@
   --chip-text: #ffffff;
   --chip-soft-bg: #f1f1f1;
   --chip-soft-text: #555555;
+  --danger-color: #e05c5c;
 
   /* Smooth theme transition */
   --transition-theme: background-color 0.3s ease, color 0.3s ease;
 }
 
-html {
-  background-image: linear-gradient(hsl(var(--border)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
-}
-
 html.dark {
-  background-image: linear-gradient(hsl(var(--border)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
   color: var(--text-secondary);
 
   /* Color system - Dark mode */
@@ -45,7 +41,7 @@ html.dark {
   --chip-text: #f3f3f3;
   --chip-soft-bg: #2e3132;
   --chip-soft-text: #c9c9c9;
-  --border: 220 12% 18%;
+  --danger-color: hsl(0 60% 64%);
 }
 
 body {
