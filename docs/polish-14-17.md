@@ -45,6 +45,14 @@ iconos de dispositivo, limpieza de assets y el toggle de tema.
     `.dark`.
 - Comando ⌘K: "Toggle dark mode" (reutiliza el mismo botón).
 
+### Extra: hint del command palette (⌘K)
+- Hint sutil en el Hero, bajo los social links: "Press ⌘K for quick
+  actions" con teclas físicas `<kbd>` — el patrón "Keystroke Micro-UIs" de
+  `minimalist-ui` (borde 1px, radius 4px, fondo `--bg-secondary`, mono,
+  borde inferior de 2px para el relieve).
+- Solo desktop (oculto en `<768px`, donde ⌘K no aplica) y oculto en print.
+- Participa de la cascada de entrada del Hero (`data-reveal` index 4).
+
 ## Verificación
 
 `npm run build` (astro check + build) OK; woff2 de Ubuntu Mono presentes en

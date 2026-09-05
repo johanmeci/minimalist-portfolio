@@ -76,8 +76,11 @@ const printInfo = [email, linkedUrl].filter(Boolean).join(" • ");
         }
         <ThemeIcon />
       </footer>
+      <p class="cmdk-hint" data-reveal style="--reveal-index: 4">
+        Press <kbd>⌘</kbd><kbd>K</kbd> for quick actions
+      </p>
     </div>
-    <figure class="profile-image" data-reveal style="--reveal-index: 4">
+    <figure class="profile-image" data-reveal style="--reveal-index: 5">
       <img
         src="/assets/johanmeneses_profile.jpg"
         alt={`${name} - ${label} professional headshot`}
@@ -160,6 +163,37 @@ const printInfo = [email, linkedUrl].filter(Boolean).join(" • ");
     margin-top: 12px;
   }
 
+  .cmdk-hint {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 1.25rem;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+  }
+
+  .cmdk-hint kbd {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.4rem;
+    height: 1.4rem;
+    padding: 0 0.3rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-bottom-width: 2px;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 768px) {
+    .cmdk-hint {
+      display: none;
+    }
+  }
+
   .social-links a {
     color: var(--chip-text);
     display: inline-flex;
@@ -221,7 +255,8 @@ const printInfo = [email, linkedUrl].filter(Boolean).join(" • ");
       padding-right: 0;
     }
 
-    .social-links {
+    .social-links,
+    .cmdk-hint {
       display: none;
     }
 
