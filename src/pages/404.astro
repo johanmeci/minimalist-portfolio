@@ -1,0 +1,65 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Page not found | Johan Meneses">
+	<main id="main-content" class="notfound">
+		<p class="code" data-reveal>404</p>
+		<h1 data-reveal style="--reveal-index: 1">Page not found</h1>
+		<p class="message" data-reveal style="--reveal-index: 2">
+			The page you are looking for doesn't exist or has been moved.
+		</p>
+		<a href="/" data-reveal style="--reveal-index: 3">← Back home</a>
+	</main>
+</Layout>
+
+<style>
+	.notfound {
+		min-height: 70dvh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.75rem;
+		padding: 4rem 1.5rem;
+		text-align: center;
+	}
+
+	.code {
+		font-size: clamp(4rem, 12vw, 7rem);
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: -0.03em;
+		color: var(--accent-color);
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+		color: var(--text-primary);
+	}
+
+	.message {
+		max-width: 40ch;
+	}
+
+	a {
+		margin-top: 1rem;
+		font-size: 0.95rem;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	a:active {
+		transform: scale(0.98);
+	}
+
+	@media print {
+		.notfound {
+			min-height: auto;
+			padding: 2rem 0;
+		}
+	}
+</style>

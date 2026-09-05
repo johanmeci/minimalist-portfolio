@@ -344,4 +344,35 @@ import data from "@/data/clinic-dentist.json";
       grid-template-columns: 1fr;
     }
   }
+
+  /* Print */
+  @media print {
+    main {
+      padding: 0;
+      max-width: none;
+    }
+
+    .back-link,
+    .hero-image,
+    .challenge-image,
+    .tech-stack {
+      display: none;
+    }
+
+    .hero {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .content-section {
+      padding: 1rem 0;
+    }
+
+    .highlight-card,
+    .challenge-card {
+      border: none;
+      padding: 0.5rem 0;
+      break-inside: avoid;
+    }
+  }
 </style>
