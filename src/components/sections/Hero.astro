@@ -79,7 +79,7 @@ const printInfo = [email, linkedUrl].filter(Boolean).join(" • ");
     </div>
     <figure class="profile-image">
       <img
-        src="/assets/avatar_johanmeneses.jpg"
+        src="/assets/johanmeneses_profile.jpg"
         alt={`${name} - ${label} professional headshot`}
         loading="eager"
         width="190"
@@ -95,6 +95,7 @@ const printInfo = [email, linkedUrl].filter(Boolean).join(" • ");
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .info {
@@ -122,42 +123,25 @@ const printInfo = [email, linkedUrl].filter(Boolean).join(" • ");
 
   .profile-image {
     margin: 0;
-    position: relative;
-  }
-
-  .profile-image::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: -10px;
-    bottom: -5px;
-    border-radius: 16px;
-    background: var(--accent-color);
-    opacity: 0.1;
-    z-index: -1;
-    transition: all 0.3s ease;
-  }
-
-  .profile-image:hover::after {
-    top: 15px;
-    opacity: 0.2;
+    padding: .5rem .5rem 1.5rem .5rem;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 3px 6px rgba(38,38,38,0.2);
+    transform: rotate(-3deg);
+    transition: transform .2s ease;
+    &:hover {
+      transform: rotate(0deg);
+    }
   }
 
   img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: top;
-    width: 190px;
-    height: 240px;
-    border-radius: 16px;
-    box-shadow: var(--card-shadow);
-    border: 4px solid;
+    width: 132px;
+    height: 139px;
+    border-radius: 0;
     transition: transform 0.2s ease;
-  }
-
-  .profile-image:hover img {
-    transform: translateY(-3px);
   }
 
   .location {
