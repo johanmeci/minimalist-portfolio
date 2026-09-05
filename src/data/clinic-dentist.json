@@ -6,19 +6,19 @@
   "technologies": ["nextjs", "typescript", "supabase", "shadcn", "tailwind"],
   "highlights": [
     {
-      "title": "Patient Records",
+      "title": "Patient records",
       "description": "Centralized patient profiles with contact data, appointment history, odontogram tracking, radiography uploads, administrative notes, and treatment plans."
     },
     {
-      "title": "Appointment Scheduling",
+      "title": "Appointment scheduling",
       "description": "Weekly calendar scheduling with server side conflict validation, busy slot awareness in the UI, and appointment status management."
     },
     {
-      "title": "Role based Access",
+      "title": "Role-based access",
       "description": "Distinct permission levels for admins, dentists, and reception staff, with navigation and restricted sections tailored to each workflow."
     },
     {
-      "title": "Operational Dashboard",
+      "title": "Operational dashboard",
       "description": "Dashboard with daily occupancy, total patient count, odontogram alerts, and a quick view of today's schedule with appointment statuses."
     }
   ],
