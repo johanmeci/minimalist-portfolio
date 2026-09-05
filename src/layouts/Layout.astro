@@ -91,11 +91,10 @@ const { title, description, image, article, canonical } = Astro.props as Props;
 
 				const saved = typeof localStorage !== 'undefined' ? localStorage.getItem('theme') : null;
 				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-				const choice = saved ?? 'system';
-				const theme = choice === 'system' ? (prefersDark ? 'dark' : 'light') : choice;
+				const theme = saved === 'light' || saved === 'dark' ? saved : (prefersDark ? 'dark' : 'light');
 				document.documentElement.classList.toggle('dark', theme === 'dark');
-				document.documentElement.dataset.themeChoice = choice;
-				localStorage.setItem('theme', choice);
+				document.documentElement.dataset.themeChoice = theme;
+				localStorage.setItem('theme', theme);
 
 				// Track the initial page load through GTM only.
 				pushVirtualPageview();
@@ -120,10 +119,9 @@ const { title, description, image, article, canonical } = Astro.props as Props;
 			document.addEventListener('astro:after-swap', () => {
 				const savedTheme = localStorage.getItem('theme');
 				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-				const choice = savedTheme ?? 'system';
-				const theme = choice === 'system' ? (prefersDark ? 'dark' : 'light') : choice;
+				const theme = savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : (prefersDark ? 'dark' : 'light');
 				document.documentElement.classList.toggle('dark', theme === 'dark');
-				document.documentElement.dataset.themeChoice = choice;
+				document.documentElement.dataset.themeChoice = theme;
 
 				const saved = sessionStorage.getItem('scroll:' + location.pathname);
 				if (saved !== null) {

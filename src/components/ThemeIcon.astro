@@ -1,13 +1,11 @@
 ---
 import Sun from "@/icons/Sun.astro";
 import Moon from "@/icons/Moon.astro";
-import Monitor from "@/icons/Monitor.astro";
 ---
 
-<button id="themeToggle" aria-label="Cycle theme" title="Theme: system">
+<button id="themeToggle" aria-label="Toggle theme" title="Toggle between light and dark mode">
   <Sun class="sun" id="sun" />
   <Moon class="moon" id="moon" />
-  <Monitor class="system" id="system" />
 </button>
 
 <style>
@@ -32,7 +30,7 @@ import Monitor from "@/icons/Monitor.astro";
     box-shadow: var(--card-shadow);
   }
 
-  .sun, .moon, .system {
+  .sun, .moon {
     animation: scale-up-center 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     width: 100%;
     height: 100%;
@@ -40,14 +38,10 @@ import Monitor from "@/icons/Monitor.astro";
 
   .sun { display: none; }
   .moon { display: block; }
-  .system { display: none; }
 
-  /* Icon reflects the chosen mode; Layout sets data-theme-choice before paint */
+  /* Icon reflects the effective theme; Layout sets data-theme-choice before paint */
   :global(html[data-theme-choice="dark"]) .sun { display: block; }
   :global(html[data-theme-choice="dark"]) .moon { display: none; }
-
-  :global(html[data-theme-choice="system"]) .moon { display: none; }
-  :global(html[data-theme-choice="system"]) .system { display: block; }
 
   @keyframes scale-up-center {
     from {
@@ -71,35 +65,12 @@ import Monitor from "@/icons/Monitor.astro";
 
 <script is:inline>
   (() => {
-    const ORDER = ["light", "dark", "system"];
-
-    const applyTheme = (choice) => {
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      const dark = choice === "dark" || (choice === "system" && prefersDark);
-      document.documentElement.classList.toggle("dark", dark);
-      document.documentElement.dataset.themeChoice = choice;
-      window.localStorage.setItem("theme", choice);
-
-      const button = document.getElementById("themeToggle");
-      if (button) {
-        const effective = dark ? "dark" : "light";
-        button.title = choice === "system" ? `Theme: system (${effective})` : `Theme: ${choice}`;
-      }
-    };
-
     document.getElementById("themeToggle").addEventListener("click", () => {
-      const current = window.localStorage.getItem("theme") ?? "system";
-      const next = ORDER[(ORDER.indexOf(current) + 1) % ORDER.length];
-      applyTheme(next);
+      const isDark = document.documentElement.classList.contains("dark");
+      const theme = isDark ? "light" : "dark";
+      document.documentElement.classList.toggle("dark", !isDark);
+      document.documentElement.dataset.themeChoice = theme;
+      window.localStorage.setItem("theme", theme);
     });
-
-    // Live-follow OS preference while in system mode
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", () => {
-        if ((window.localStorage.getItem("theme") ?? "system") === "system") {
-          applyTheme("system");
-        }
-      });
   })();
 </script>

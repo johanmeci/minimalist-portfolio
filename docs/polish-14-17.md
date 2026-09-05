@@ -31,22 +31,19 @@ iconos de dispositivo, limpieza de assets y el toggle de tema.
   - `public/assets/avatar_johanmeneses.png`
   - `src/icons/Phone.astro` (componente sin uso)
 
-### 17. Theme toggle con estado "system"
-`minimalist-ui` pide evitar el toggle binario sol/luna y usar "system
-preference detection". El toggle ahora cicla **light → dark → system**:
-- `Layout.astro`: el script inicial resuelve `system` contra
-  `prefers-color-scheme` antes del primer paint y expone el estado en
-  `html[data-theme-choice]`; el handler `astro:after-swap` usa la misma
-  lógica (fix de colisión de nombres `saved`/`savedTheme`).
-- `ThemeIcon.astro`: tercer icono **Monitor** (Lucide, mismo trazo 2px)
-  visible solo en modo `system`; title/aria reflejan el estado efectivo
-  ("Theme: system (dark)").
-- Live-follow: si el SO cambia de tema con `system` activo, la página se
-  actualiza sin recargar.
-- Estado por defecto (sin preferencia guardada): `system` — antes era
-  light/dark resuelto una sola vez y "congelado".
-- Command palette (⌘K): comando renombrado a "Cycle theme (light / dark /
-  system)" — reutiliza el mismo botón.
+### 17. Theme toggle
+- Se evaluó un toggle de tres estados (light → dark → system) siguiendo la
+  sugerencia de `minimalist-ui` ("system preference detection"); se
+  **revirtió por decisión del autor**: el toggle queda binario light/dark.
+- Lo que se conserva del experimento:
+  - `Layout.astro` centraliza el estado del tema antes del primer paint
+    (resuelve `prefers-color-scheme` si no hay preferencia guardada — la
+    detección de sistema inicial que pedía la skill) y expone el estado
+    efectivo en `html[data-theme-choice]`; `astro:after-swap` usa la misma
+    lógica (fix de colisión de nombres `saved`/`savedTheme`).
+  - Los iconos sol/luna se rigen por `data-theme-choice` en vez de la clase
+    `.dark`.
+- Comando ⌘K: "Toggle dark mode" (reutiliza el mismo botón).
 
 ## Verificación
 
