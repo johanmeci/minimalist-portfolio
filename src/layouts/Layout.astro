@@ -152,7 +152,7 @@ const { title, description, image, article, canonical } = Astro.props as Props;
 							}
 						}
 					},
-					{ threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+					{ threshold: 0, rootMargin: '0px 0px 10% 0px' }
 				);
 
 				elements.forEach((el) => observer.observe(el));
@@ -258,11 +258,11 @@ const { title, description, image, article, canonical } = Astro.props as Props;
 	/* Scroll-entry reveals */
 	[data-reveal] {
 		opacity: 0;
-		transform: translateY(12px);
+		transform: translateY(28px) scale(0.985);
 		transition:
-			opacity 600ms cubic-bezier(0.16, 1, 0.3, 1),
-			transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
-		transition-delay: calc(var(--reveal-index, 0) * 80ms);
+			opacity 800ms cubic-bezier(0.22, 1, 0.36, 1),
+			transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+		transition-delay: calc(var(--reveal-index, 0) * 100ms);
 	}
 
 	[data-reveal].is-visible {
