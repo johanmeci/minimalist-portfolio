@@ -1,6 +1,8 @@
 ---
 import SEO from "@/components/SEO.astro";
 import { ViewTransitions } from "astro:transitions";
+import "@fontsource/ubuntu-mono/400.css";
+import "@fontsource/ubuntu-mono/700.css";
 
 interface Props {
 	title?: string;
@@ -19,9 +21,6 @@ const { title, description, image, article, canonical } = Astro.props as Props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 		<!-- Google Tag Manager -->
 		<script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -90,11 +89,13 @@ const { title, description, image, article, canonical } = Astro.props as Props;
 					});
 				};
 
-				const saved = typeof localStorage !== 'undefined' && localStorage.getItem('theme');
+				const saved = typeof localStorage !== 'undefined' ? localStorage.getItem('theme') : null;
 				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-				const theme = saved ?? (prefersDark ? 'dark' : 'light');
+				const choice = saved ?? 'system';
+				const theme = choice === 'system' ? (prefersDark ? 'dark' : 'light') : choice;
 				document.documentElement.classList.toggle('dark', theme === 'dark');
-				localStorage.setItem('theme', theme);
+				document.documentElement.dataset.themeChoice = choice;
+				localStorage.setItem('theme', choice);
 
 				// Track the initial page load through GTM only.
 				pushVirtualPageview();
@@ -117,8 +118,12 @@ const { title, description, image, article, canonical } = Astro.props as Props;
 
 			// After the DOM is swapped, restore theme and scroll position
 			document.addEventListener('astro:after-swap', () => {
-				const theme = localStorage.getItem('theme') ?? 'light';
+				const savedTheme = localStorage.getItem('theme');
+				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				const choice = savedTheme ?? 'system';
+				const theme = choice === 'system' ? (prefersDark ? 'dark' : 'light') : choice;
 				document.documentElement.classList.toggle('dark', theme === 'dark');
+				document.documentElement.dataset.themeChoice = choice;
 
 				const saved = sessionStorage.getItem('scroll:' + location.pathname);
 				if (saved !== null) {
