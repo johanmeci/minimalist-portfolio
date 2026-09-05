@@ -2,6 +2,7 @@
   --line: color-mix(in lch, canvasText, transparent 92%);
   --size: 50px;
   --section-pad-top: 3.5rem;
+  --font-mono: "Ubuntu Mono", Menlo, Monaco, "Courier New", monospace;
 
   /* Color system - Light mode */
   --bg-primary: #ffffff;
@@ -53,11 +54,15 @@ body::before {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  background: linear-gradient(90deg,
+  background:
+    radial-gradient(42rem 24rem at 12% -4rem,
+      color-mix(in srgb, var(--accent-color) 4%, transparent), transparent 70%),
+    radial-gradient(50rem 28rem at 88% 10rem,
+      hsl(35 70% 60% / 0.035), transparent 70%),
+    linear-gradient(90deg,
       var(--line) 1px,
       transparent 1px var(--size)) 0 -5vmin / var(--size) var(--size),
     linear-gradient(var(--line) 1px, transparent 1px var(--size)) 0 -5vmin / var(--size) var(--size);
-  /* mask: linear-gradient(0, transparent 80%, white); */
   top: 0;
   z-index: -1;
 }

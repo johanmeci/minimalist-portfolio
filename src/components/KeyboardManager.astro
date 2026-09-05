@@ -1,24 +1,103 @@
-<footer></footer>
-
-<ninja-keys> </ninja-keys>
+<ninja-keys></ninja-keys>
 
 <script>
   import "ninja-keys"
 
   const ninja = document.querySelector("ninja-keys")
 
-  if(ninja !== null) {
+  if (ninja !== null) {
+    const scrollTo = (id: string) => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+    }
+
     ninja.data = [
       {
-        id: 'print',
-        title: 'Print',
-        hotkey: 'ctrl+P',
-        icon: 'apps',
-        section: 'Acciones',
+        id: "go-about",
+        title: "Go to About",
+        hotkey: "cmd+1",
+        section: "Navigation",
+        handler: () => scrollTo("about"),
+      },
+      {
+        id: "go-experience",
+        title: "Go to Experience",
+        hotkey: "cmd+2",
+        section: "Navigation",
+        handler: () => scrollTo("experience"),
+      },
+      {
+        id: "go-projects",
+        title: "Go to Projects",
+        hotkey: "cmd+3",
+        section: "Navigation",
+        handler: () => scrollTo("projects"),
+      },
+      {
+        id: "go-education",
+        title: "Go to Education",
+        hotkey: "cmd+4",
+        section: "Navigation",
+        handler: () => scrollTo("education"),
+      },
+      {
+        id: "go-skills",
+        title: "Go to Skills",
+        hotkey: "cmd+5",
+        section: "Navigation",
+        handler: () => scrollTo("skills"),
+      },
+      {
+        id: "toggle-theme",
+        title: "Toggle dark mode",
+        hotkey: "cmd+6",
+        section: "Actions",
+        handler: () => {
+          document.getElementById("themeToggle")?.click()
+        },
+      },
+      {
+        id: "print",
+        title: "Print / Save as PDF",
+        hotkey: "cmd+7",
+        section: "Actions",
         handler: () => {
           window.print()
         },
-      }
+      },
+      {
+        id: "download-cv",
+        title: "Download CV",
+        hotkey: "cmd+8",
+        section: "Contact",
+        handler: () => {
+          document.querySelector<HTMLAnchorElement>('a[data-analytics-label="cv"]')?.click()
+        },
+      },
+      {
+        id: "email",
+        title: "Send an email",
+        hotkey: "cmd+9",
+        section: "Contact",
+        handler: () => {
+          document.querySelector<HTMLAnchorElement>('a[data-analytics-label="email"]')?.click()
+        },
+      },
+      {
+        id: "github",
+        title: "Open GitHub profile",
+        section: "Contact",
+        handler: () => {
+          document.querySelector<HTMLAnchorElement>('a[data-analytics-label="github"]')?.click()
+        },
+      },
+      {
+        id: "linkedin",
+        title: "Open LinkedIn profile",
+        section: "Contact",
+        handler: () => {
+          document.querySelector<HTMLAnchorElement>('a[data-analytics-label="linkedin"]')?.click()
+        },
+      },
     ]
   }
 </script>
