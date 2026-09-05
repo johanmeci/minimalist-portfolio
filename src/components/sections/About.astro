@@ -7,10 +7,8 @@ const { summary } = basics;
 ---
 
 <Section title="About">
-  <div class="icon-container">
-    <AboutIcon />
-  </div>
-  <p class="summary">{summary}</p>
+  <AboutIcon slot="icon" />
+  <p class="summary" data-reveal>{summary}</p>
 </Section>
 
 <style>

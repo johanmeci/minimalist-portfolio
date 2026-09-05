@@ -6,9 +6,7 @@ import { education } from "@cv";
 ---
 
 <Section title="Education">
-  <div class="icon-container">
-    <EducationIcon />
-  </div>
+  <EducationIcon slot="icon" />
   <ul>
     {
       (education || [])
@@ -58,11 +56,7 @@ import { education } from "@cv";
 
   article h3 {
     font-weight: 700;
-    color: #111;
-  }
-
-  :global(.dark) article h3 {
-    color: #e3d3d3;
+    color: var(--text-primary);
   }
 
   header {
@@ -73,7 +67,7 @@ import { education } from "@cv";
   }
 
   time {
-    color: #555;
+    color: var(--text-muted);
     font-size: 0.85rem;
     min-width: 102px;
     text-align: right;

@@ -21,13 +21,13 @@ import Moon from "@/icons/Moon.astro";
       transform: translateY(-3px);
     }
     &:focus-visible {
-      outline: 2px solid var(--accent-color, #4a89dc);
+      outline: 2px solid var(--accent-color, hsl(214 38% 55%));
       outline-offset: 2px;
     }
   }
 
   :global(.dark) #themeToggle:hover {
-    box-shadow: 0px 4px 8px rgba(227, 211, 211, 0.2);
+    box-shadow: var(--card-shadow);
   }
 
   .sun, .moon {

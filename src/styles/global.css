@@ -1,6 +1,7 @@
 :root {
   --line: color-mix(in lch, canvasText, transparent 92%);
   --size: 50px;
+  --section-pad-top: 3.5rem;
 
   /* Color system - Light mode */
   --bg-primary: #ffffff;
@@ -9,9 +10,13 @@
   --text-primary: #333333;
   --text-secondary: #666666;
   --text-muted: #777777;
-  --accent-color: #4a89dc;
+  --accent-color: hsl(214 38% 55%);
   --border-color: #eeeeee;
-  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --card-shadow: 0 2px 10px hsl(214 30% 25% / 0.08);
+  --chip-bg: #17191a;
+  --chip-text: #ffffff;
+  --chip-soft-bg: #f1f1f1;
+  --chip-soft-text: #555555;
 
   /* Smooth theme transition */
   --transition-theme: background-color 0.3s ease, color 0.3s ease;
@@ -22,9 +27,8 @@ html {
 }
 
 html.dark {
-  /* background-color: #17191a; */
   background-image: linear-gradient(hsl(var(--border)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
-  color: #e3d3d3;
+  color: var(--text-secondary);
 
   /* Color system - Dark mode */
   --line: color-mix(in lch, canvasText, transparent 82%);
@@ -32,11 +36,15 @@ html.dark {
   --bg-primary-rgb: 37, 40, 41;
   --bg-secondary: #2e3132;
   --text-primary: #f3f3f3;
-  --text-secondary: #e3d3d3;
-  --text-muted: #b0b0b0;
-  --accent-color: #5c9ce6;
+  --text-secondary: #c9c9c9;
+  --text-muted: #9d9d9d;
+  --accent-color: hsl(214 40% 68%);
   --border-color: #282c33;
-  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --card-shadow: 0 2px 10px hsl(214 30% 3% / 0.5);
+  --chip-bg: #2e3132;
+  --chip-text: #f3f3f3;
+  --chip-soft-bg: #2e3132;
+  --chip-soft-text: #c9c9c9;
   --border: 220 12% 18%;
 }
 
@@ -88,12 +96,6 @@ a:hover {
 }
 
 /* Icon styles */
-.icon-container {
-  position: absolute;
-  top: 43px;
-  left: 0;
-}
-
 .icon-container svg {
   transition: all 180ms ease;
   stroke-width: 1.5;
