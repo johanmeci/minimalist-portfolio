@@ -48,11 +48,11 @@ import { work } from "@cv";
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    li {
-      border: 1px solid var(--border-color);
-      padding: 1rem;
-      border-radius: 5px;
-      background-color: #ffffff;
+  li {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--bg-primary);
       transition: border-color 180ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
       &:hover {
         border-color: color-mix(in srgb, var(--text-primary), transparent 60%);
@@ -72,11 +72,6 @@ import { work } from "@cv";
     margin-bottom: 0.3rem;
     font-weight: 700;
     color: var(--text-primary);
-  }
-
-  article h4 {
-    color: var(--text-secondary);
-    font-weight: 400;
   }
 
   header {

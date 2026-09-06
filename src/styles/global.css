@@ -160,6 +160,20 @@ section:hover .icon-container svg rect {
   }
 }
 
+/* Command palette (ninja-keys) inherits the site theme */
+ninja-keys {
+  --ninja-background: var(--bg-primary);
+  --ninja-accent-color: var(--accent-color);
+  --ninja-accent-background: var(--bg-secondary);
+  --ninja-text-color: var(--text-primary);
+  --ninja-selected-background: var(--bg-secondary);
+  --ninja-selected-text-color: var(--text-primary);
+  --ninja-footer-background: var(--bg-secondary);
+  --ninja-placeholder-color: var(--text-muted);
+  --ninja-divider-color: var(--border-color);
+  font-family: var(--font-mono);
+}
+
 /* Print improvements */
 @media print {
   body {
