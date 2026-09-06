@@ -162,16 +162,24 @@ section:hover .icon-container svg rect {
 
 /* Command palette (ninja-keys) inherits the site theme */
 ninja-keys {
-  --ninja-background: var(--bg-primary);
-  --ninja-accent-color: var(--accent-color);
-  --ninja-accent-background: var(--bg-secondary);
+  --ninja-modal-background: var(--bg-primary);
+  --ninja-overflow-background: color-mix(in srgb, var(--text-primary), transparent 60%);
   --ninja-text-color: var(--text-primary);
-  --ninja-selected-background: var(--bg-secondary);
-  --ninja-selected-text-color: var(--text-primary);
+  --ninja-secondary-text-color: var(--text-secondary);
+  --ninja-accent-color: var(--accent-color);
+  --ninja-selected-background: var(--chip-bg);
+  --ninja-selected-text-color: var(--chip-text);
+  --ninja-secondary-background-color: var(--bg-secondary);
+  --ninja-icon-color: var(--text-muted);
+  --ninja-group-text-color: var(--text-muted);
   --ninja-footer-background: var(--bg-secondary);
   --ninja-placeholder-color: var(--text-muted);
-  --ninja-divider-color: var(--border-color);
-  font-family: var(--font-mono);
+  --ninja-separate-border: 1px solid var(--border-color);
+  --ninja-key-border-radius: 4px;
+  --ninja-backdrop-filter: blur(4px);
+  --ninja-modal-shadow: var(--card-shadow);
+  --ninja-font-family: var(--font-mono);
+  --ninja-font-size: 16px;
 }
 
 /* Print improvements */
