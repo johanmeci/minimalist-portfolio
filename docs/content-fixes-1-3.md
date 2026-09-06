@@ -36,14 +36,35 @@ puntos menores (guiones compuestos, lenguaje vago) documentados abajo.
   capitalización rota), "Operational Dashboard" → "Operational dashboard".
 - Los títulos de "challenges" ya estaban en sentence case; no se tocaron.
 
-## Pendientes (auditados, no aplicados aún)
+## Pendientes aplicados en esta misma rama
 
-- Guiones compuestos faltantes (hands on → hands-on, real time → real-time,
-  content driven → content-driven, etc.) en `cv.json` y `clinic-dentist.json`.
-- Lenguaje vago: "modern web technologies" (SEO description), "dynamic,
-  content driven experiences" (Takeoff Media), "special attention to smooth
-  interactions" (Edpracol), "streamline contact and inquiry workflows"
-  (Studio Models).
+### 4. Guiones compuestos (adjetivos compuestos en inglés)
+- `cv.json`:
+  - basics.summary: "hands on" → "hands-on"
+  - Takeoff Media: "content driven" → "content-driven", "cross client" →
+    "cross-client", "long term" → "long-term"
+  - Siesa: "peer to peer" → "peer-to-peer", "multi user" → "multi-user",
+    "real time communication" → "real-time" (el adverbio "in real time"
+    se mantiene sin guion, uso correcto)
+  - GB Media: "cross browser" → "cross-browser", "high fidelity" →
+    "high-fidelity", "on page optimization" → "on-page"
+  - Projects: "full stack" → "full-stack" (Clinic Dentist)
+- `clinic-dentist.json`: "full stack" → "full-stack", "role aware" →
+  "role-aware", "server side" → "server-side" (x3), "time range" →
+  "time-range", "payment follow up" → "payment follow-up".
+
+### 5. Lenguaje vago → concreto
+- SEO description: "modern web technologies" → "TypeScript" (dato concreto).
+- Takeoff Media: "modern web applications... dynamic, content driven
+  experiences" → "web applications... content-driven experiences" (fuera
+  los fillers "modern"/"dynamic").
+- Studio Models: "integrated Resend to streamline contact and inquiry
+  workflows" → "contact and inquiry forms delivered through Resend".
+- Edpracol: "High performance... with special attention to smooth
+  interactions and strong Core Web Vitals" → "High-performance... built
+  with Astro, GSAP animations, and Prismic CMS, with a focus on Core Web
+  Vitals" (fuera "special attention to smooth interactions").
+- GB Media: "nontechnical" → "non-technical".
 
 ## Verificación
 
